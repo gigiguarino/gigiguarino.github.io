@@ -1,0 +1,49 @@
+body {
+	background-color: #b1c5bc;
+	font-family: "Calibri", "Franklin Gothic Medium", sans-serif;
+	color: #545454;
+	font-size: 12px;
+}
+
+a {
+	text-decoration: none;
+}
+
+p.small-text {
+	font-size: 10px;
+}
+
+img:hover {
+	opacity: 0.8;
+}
+
+#link-text {
+	font-size: 20px;
+	font-weight: bolder;
+	font-family: "Calibri", "Franklin Gothic Medium", sans-serif;
+	color: #545454;
+	text-decoration: none;
+	font-weight: bold;
+	position: absolute;
+	top: 70px;
+	left: 80px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+div.image {
+	display: inline-block;
+	position: relative;
+}
+
+a.special {
+	color: black;
+}
+
+a.special:hover {
+	color: white;
+}
+
+
+/**/
+
