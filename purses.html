@@ -1,174 +1,101 @@
 
 <!DOCTYPE html>
-<!--  -->
 <html>
 	<head>
-
-		<!-- stylesheet -->
 		<link type="text/css" rel="stylesheet" href="stylesheet.css">
-
 		<title>Gigi: Purses</title>
-
+		<script type="text/javascript" 
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$.get("header.html", function(data) {
+					$("#header").html(data);
+				});
+				$("#content").hide();
+			});
+			$(window).load(function(){
+				$("#content").fadeIn("slow");
+			});	
+		</script>
 	</head>
-
 	<body>
-
-		<div class="header">
-			
-			<!-- header background image -->
-			<img 
-				id="header-flower"
-				src="http://i64.tinypic.com/2na4hkw.png"
-			/>
-
-			<a href="contact.html">
-				<img
-					id="header-pic"
-					src="http://i65.tinypic.com/33m7d4x.png"
-				/>
-			</a>
-
-			<!-- name -->
-			<a id="name" href="index.html">
-				Gabrielle <br>
-				"Gigi" <br>
-				Guarino
-			</a>
-
-			<!-- links to other pages -->
-			<div id="links">
-
-				<a href="about.html">
-				 	- About - 
-				</a> <br>
-
-				<a href="contact.html">
-				 	- Contact - 
-				</a> <br>
-
-				<a href="games.html"> 
-					- Games - 
-				</a> <br>
-
-				<a href="purses.html"> 
-					- Purses - 
-				</a> <br>
-
-				<a href="headbands.html"> 
-					- Headbands - 
-				</a> <br>
-
-				<a href="pixel-art.html"> 
-					- Pixel Art - 
-				</a> <br>
-
-			</div>
-
+		<div id="header"></div>
+		<div id="content">
+			<table class="image-table">
+				<tr class="image-table">
+					<td class="purse">
+						<img 
+						class="image-box"
+						src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/image-box_zpslnjdbky9.png"/>
+						<img 
+						class="purse-image"
+						src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_0041_zpsyfvak7el.jpg"/>
+					</td>
+					<td class="purse">
+						<img 
+						class="image-box"
+						src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/image-box_zpslnjdbky9.png"/>
+						<img 
+						class="purse-image"
+						src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3839_zpsectclpgi.jpg"/>
+					</td>
+				</tr>
+				<tr class="image-table">
+					<td class="purse">
+						<img 
+						class="image-box"
+						src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/image-box_zpslnjdbky9.png"/>
+						<img 
+						class="purse-image"
+						src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_2052_zpsxdqnwjbr.jpg"/>
+					</td>
+					<td class="purse">
+						<img 
+						class="image-box"
+						src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/image-box_zpslnjdbky9.png"/>
+						<img 
+						class="purse-image"
+						src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3840_zpsf7c1l0ru.jpg"/>
+					</td>
+				</tr>
+				<tr class="image-table">
+					<td class="purse">
+						<img 
+						class="image-box"
+						src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/image-box_zpslnjdbky9.png"/>
+						<img 
+						class="purse-image"
+						src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_0040_zps2tmv3xmd.jpg"/>
+					</td>
+					<td class="purse">
+						<img 
+						class="image-box"
+						src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/image-box_zpslnjdbky9.png"/>
+						<img 
+						class="purse-image"
+						src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3838_zpsnjvonwlq.jpg"/>
+					</td>
+				</tr>
+				<tr class="image-table">
+					<td class="purse">
+						<img 
+						class="image-box"
+						src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/image-box_zpslnjdbky9.png"/>
+						<img 
+						class="purse-image"
+						src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3841_zpsnpqokcwa.jpg"/>
+					</td>
+					<td class="purse">
+						<img 
+						class="image-box"
+						src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/image-box_zpslnjdbky9.png"/>
+						<img 
+						class="purse-image"
+						src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_0313_zpsitbtvwpc.jpg"/>
+					</td>
+				</tr>
+			</table>
 		</div>
-
-		<table class="image-table">
-
-			<tr class="image-table">
-
-				<td class="purse">
-					<img 
-					class="image-box"
-					src="http://i67.tinypic.com/ir00ph.png"/>
-
-					<img 
-					class="purse-image"
-					src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_0041_zpsyfvak7el.jpg"/>
-				</td>
-
-				<td class="purse">
-					<img 
-					class="image-box"
-					src="http://i67.tinypic.com/ir00ph.png"/>
-
-					<img 
-					class="purse-image"
-					src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3839_zpsectclpgi.jpg"/>
-				</td>
-			</tr>
-
-			<tr class="image-table">
-
-				<td class="purse">
-					<img 
-					class="image-box"
-					src="http://i67.tinypic.com/ir00ph.png"/>
-
-					<img 
-					class="purse-image"
-					src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_2052_zpsxdqnwjbr.jpg"/>
-				</td>
-
-				<td class="purse">
-					<img 
-					class="image-box"
-					src="http://i67.tinypic.com/ir00ph.png"/>
-
-					<img 
-					class="purse-image"
-					src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3840_zpsf7c1l0ru.jpg"/>
-				</td>
-			</tr>
-
-			<tr class="image-table">
-
-				<td class="purse">
-					<img 
-					class="image-box"
-					src="http://i67.tinypic.com/ir00ph.png"/>
-
-					<img 
-					class="purse-image"
-					src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_0040_zps2tmv3xmd.jpg"/>
-				</td>
-
-				<td class="purse">
-					<img 
-					class="image-box"
-					src="http://i67.tinypic.com/ir00ph.png"/>
-
-					<img 
-					class="purse-image"
-					src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3838_zpsnjvonwlq.jpg"/>
-				</td>
-			</tr>
-
-			<tr class="image-table">
-
-				<td class="purse">
-					<img 
-					class="image-box"
-					src="http://i67.tinypic.com/ir00ph.png"/>
-
-					<img 
-					class="purse-image"
-					src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3841_zpsnpqokcwa.jpg"/>
-				</td>
-
-				<td class="purse">
-					<img 
-					class="image-box"
-					src="http://i67.tinypic.com/ir00ph.png"/>
-
-					<img 
-					class="purse-image"
-					src="http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_0313_zpsitbtvwpc.jpg"/>
-				</td>
-			</tr>
-
-
-		</table>
-
-
-		<div id="email">
-
-		</div>
-
-
 	</body>
-
 </html>

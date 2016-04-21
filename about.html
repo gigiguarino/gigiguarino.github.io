@@ -1,117 +1,60 @@
 
 <!DOCTYPE html>
-<!--  -->
 <html>
 	<head>
-
-		<!-- stylesheet -->
 		<link type="text/css" rel="stylesheet" href="stylesheet.css">
-
-
 		<title>Gigi: About</title>
-
+		<script type="text/javascript" 
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$.get("header.html", function(data) {
+					$("#header").html(data);
+				});
+				$("#content").hide();
+			});
+			$(window).load(function(){
+				$("#content").fadeIn("slow");
+			});	
+		</script>
 	</head>
-
 	<body>
-
-		<div class="header">
-			
-			<!-- header background image -->
-			<img 
-				id="header-flower"
-				src="http://i64.tinypic.com/2na4hkw.png"
-			/>
-
-			
-			<a href="contact.html">
+		<div id="header"></div>
+		<div id="content">
+			<div id="main">
 				<img
-					id="header-pic"
-					src="http://i65.tinypic.com/33m7d4x.png"
+					src="http://i68.tinypic.com/29ok4lk.png"
 				/>
-			</a>
-
-			<!-- name -->
-			<a id="name" href="index.html">
-				Gabrielle <br>
-				"Gigi" <br>
-				Guarino
-			</a>
-
-			<!-- links to other pages -->
-			<div id="links">
-
-				<a href="about.html">
-				 	- About - 
-				</a> <br>
-
-				<a href="contact.html">
-				 	- Contact - 
-				</a> <br>
-
-				<a href="games.html"> 
-					- Games - 
-				</a> <br>
-
-				<a href="purses.html"> 
-					- Purses - 
-				</a> <br>
-
-				<a href="headbands.html"> 
-					- Headbands - 
-				</a> <br>
-
-				<a href="pixel-art.html"> 
-					- Pixel Art - 
-				</a> <br>
-
+				<div id="text-box">
+				</div>
+				<table class="text">
+					<tr>
+						<th> 
+							About:
+						</th>
+					</tr>
+					<tr>
+						<td id="smaller-font">
+							&emsp;My name is Gabrielle Guarino, but mostly everyone calls me Gigi. I am currently a student at the University of Michigan, studying Computer Engineering. A list of relevant classes I've taken can be found 
+							<a href="classes.html" class="other-link">
+							<strong>here.</strong></a>
+							<br><br>
+							&emsp; I'm interested in the combination of math, science, and art. 
+							<br><br>
+							&emsp;The way in which I personally combine these 3 things is with video games. I create them through <a href="http://unity3d.com/unity/" class="other-link"><strong>Unity</strong></a>'s software, using C#. The pixel art is made through a Mac application called Pixen. 
+							<br><br>							
+							<strong>My art forms are:</strong>
+							<br> 
+							knitting, sewing, embroidering, and pixel art.
+							<br><br>
+							<strong>My programming languages are:</strong>
+							<br> 
+							C, C++, C#, Java, Python, Javascript, HTML, CSS.		
+						</td>
+					</tr>
+				</table>
 			</div>
-
 		</div>
-
-
-		<div id="main">
-
-			<img
-				src="http://i68.tinypic.com/x4jb7a.png"
-			/>
-
-			<div id="text-box">
-			</div>
-
-			<table class="text">
-
-				<tr>
-					<th> 
-						About:
-					</th>
-				</tr>
-
-				<tr>
-					<td id="smaller-font">
-						&emsp;My name is Gabrielle Guarino, but mostly everyone calls me Gigi. I am currently a student at the University of Michigan, studying Computer Engineering. <a href="classes.html" class="other-link"><strong>Here's a list of relevant classes I've taken.</strong></a>
-						<br><br>
-						&emsp; I'm interested in the combination of math, science, and art. 
-						<br><br>
-						&emsp;The way in which I personally combine these 3 things is with video games. I create them through <a href="http://unity3d.com/unity/" class="other-link"><strong>Unity</strong></a>'s software, using C#. The pixel art is made through a Mac application called Pixen. 
-
-						<br><br>							
-						<strong>My art forms are:</strong><br> knitting, sewing, embroidering, and pixel art.
-						<br><br>
-						<strong>My programming languages are:</strong><br> C, C++, C#, Java, Python, Javscript, HTML, CSS, Objective-C.
-							
-					</td>
-				</tr>
-
-			</table>
-
-		</div>
-
-
-		<div id="email">
-
-		</div>
-
-
 	</body>
-
 </html>

@@ -2,42 +2,41 @@ body {
 	background-color: #b1c5bc;
 }
 
+#content {
+	display: none;
+}
 
-/* HEADER */
 #header-flower {
-	/* positioning */
 	position: fixed;
 	right: 0px;
 	top: 0px;
-	z-index: 50;
+	z-index: 998;
 }
 
 #header-pic {
 	position: fixed;
 	right: 10px;
 	top: 10px;
-	z-index: 60;
+	z-index: 999;
 }
 
 #name {
-	text-align: right;
 	position: fixed;
 	right: 275px;
 	top: 0px;
+	z-index: 999;
+	text-align: right;
 	color: #b1c5bc;
 	font-family: "Calibri", "Franklin Gothic Medium", sans-serif;
 	font-weight: bold;
 	font-size: 12px;
 	text-decoration: none;
-	z-index: 60;
 }
 
 #name:hover {
 	color: white;
 }
 
-
-/* LINKS */
 a {
 	text-decoration: none;
 	color: #b1c5bc;
@@ -48,46 +47,44 @@ a:hover {
 }
 
 #links {
-	/* positioning */
 	display: inline-block;
 	width: 100px;
 	height: 200px;
 	position: fixed;
 	top: 285px;
 	right: -7px;
-	z-index: 60;
-
-	/* text */
+	z-index: 999;
 	text-align: center;
 	font-size: 12px;
 	font-family: "Calibri", "Franklin Gothic Medium", sans-serif;
 	font-weight: bold;
 }
 
-/* CONTACT/ABOUT */
-
 #main {
 	display: inline-block;
 	position: relative;
-	margin-top: 100px;
+	top: 100px;
 	margin-bottom: 100px;
 	margin-right: 270px;
+	width: 350px;
 	float: right;
-	z-index: -1;
+	z-index: 100;
 }
 
 #text-box {
 	color: #545454;
 	border-style: dotted;
-	border-width: 5px;
+	border-width: 4px;
+	border-radius: 4%;
 	position: absolute;
 	margin: auto;
-	top: 5px;
-	bottom: 5px;
-	right: 5px;
+	top: 3px;
+	bottom: 3px;
 	left: 5px;
-	width: 260px;
-	height: 360px;
+	right: 5px;
+	width: 275px;
+	height: 420px;
+	z-index: 150;
 }
 
 .text {
@@ -103,12 +100,13 @@ a.other-link:hover {
 	color: black;
 }
 
-table {
+table.text {
 	position: absolute;
 	width: 250px;
 	top: 55px;
 	left: 50px;
 	right: 50px;
+	z-index: 200;
 }
 
 th {
@@ -117,9 +115,9 @@ th {
 }
 
 td {
-	font-size: 13px;
 	width: 50px;
 	padding: 2px;
+	font-size: 13px;
 	font-weight: normal;
 }
 
@@ -137,18 +135,13 @@ ul.classes {
 	padding-left: 0;
 }
 
-
-/* PURSES/HEADBANDS/EMBROIDERY */
-
-
-
 table.image-table {
 	display: inline-block;
 	position: static;
 	margin-top: 50px;
 	margin-right: 250px;
 	float: right;
-	z-index: 10;
+	z-index: 100;
 	width: 500px;
 }
 
@@ -164,73 +157,68 @@ td.headband {
 	height: 175px;
 }
 
-
-
 img.image-box {
-	z-index: 20;
 	position: absolute;
 	top: 0px;
+	z-index: 150;
 }
 
 img.purse-image {
-	z-index: 30;
+	z-index: 200;
 	position: absolute;
-	top: 25px;
-	margin-left: 11%;
-	margin-right: 11%;
-	width: 62%;
-	height: 62%;
-	color: #545454;
-	border-style: dotted;
-	border-width: 5px;
+	top: 12px;
+	margin-left: 6%;
+	margin-right: 6%;
+	width: 75%;
+	height: 75%;
+	color: #57002C;
+	border-style: solid;
+	border-width: 3px;
 }
 
 img.headband-image {
-	z-index: 30;
+	z-index: 200;
 	position: absolute;
-	top: 25px;
-	margin-left: 11%;
-	margin-right: 11%;
-	width: 62%;
-	height: 50%;
-	color: #545454;
-	border-style: dotted;
-	border-width: 5px;
+	top: 15px;
+	margin-left: 6%;
+	margin-right: 6%;
+	width: 75%;
+	height: 65%;
+	color: #57002C;
+	border-style: solid;
+	border-width: 3px;
 }
 
-/* GAMES */
-
-a.diff-link {
+.subtitle {
 	color: #545454;
 	font-size: 15px;
 }
 
-a.diff-link:hover {
+a.subtitle:hover {
 	color: white;
 }
-
 
 #larger-text-box {
 	color: #545454;
 	border-style: dotted;
-	border-width: 5px;
+	border-width: 4px;
+	border-radius: 2%;
 	position: absolute;
 	margin: auto;
 	top: 5px;
 	bottom: 5px;
 	right: 5px;
 	left: 5px;
-	width: 260px;
-	height: 1210px;
+	width: 275px;
+	height: 1220px;
+	z-index: 150;
 }
-
 
 ul {
 	font-size: 11px;
 }
 
-/* PIXEL ART */
-
+/*
 div.pixels {
 	display: inline-block;
 	width: 70%;
@@ -238,6 +226,7 @@ div.pixels {
 	margin-right: 200px;
 	float: right;
 	position: static;
+	z-index: 150;
 }
 
 img.pixels {
@@ -245,9 +234,10 @@ img.pixels {
 	vertical-align: middle;
 	padding-left: 3px;
 	padding-right: 3px;
+	z-index: 200;
 }
 
-
+*/
 
 
 

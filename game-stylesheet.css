@@ -13,8 +13,14 @@ p.small-text {
 	font-size: 10px;
 }
 
-img:hover {
-	opacity: 0.8;
+.image {
+	display: inline-block;
+	position: relative;
+}
+
+.image:hover {
+	-webkit-filter: brightness(70%);
+    -moz-filter: brightness(70%);
 }
 
 #link-text {
@@ -23,17 +29,11 @@ img:hover {
 	font-family: "Calibri", "Franklin Gothic Medium", sans-serif;
 	color: #545454;
 	text-decoration: none;
-	font-weight: bold;
 	position: absolute;
 	top: 70px;
 	left: 80px;
 	vertical-align: middle;
 	text-align: center;
-}
-
-div.image {
-	display: inline-block;
-	position: relative;
 }
 
 a.special {
@@ -43,7 +43,4 @@ a.special {
 a.special:hover {
 	color: white;
 }
-
-
-/**/
 
