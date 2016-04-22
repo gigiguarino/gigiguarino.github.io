@@ -1,13 +1,9 @@
 $(document).ready(function(){
-	$('#content').load('email.html');
+	$('#content').load('about.html');
 });
 
 $('div#links a').click(function(){
-		var page = $(this).attr('href');
-		$('#content').html(page + '.html');
-
-
-
-
-		return false;
+	var page = $(this).attr('href');
+	$('#content').load(page + '.html');
+	return false;
 });
