@@ -6,7 +6,9 @@ $(document).on("click", "#content a", function(){
 		$("#invisible").css("display", "none");
 		page = $(this).attr("href");
 		$("#content").load(page + ".html", function(){
-			$("#invisible").fadeIn("slow");
+			$("#invisible").fadeIn("fast", function(){
+				$("#content").fadeIn("slow");
+			});
 		});
 		return false;
 	}
@@ -20,9 +22,12 @@ $('a').click(function(){
 	if ($(this).attr("class") == "invalid")
 	{
 		$("#invisible").css("display", "none");
+		$("#content").css("display", "none");
 		page = $(this).attr("href");
 		$("#content").load(page + ".html", function(){
-			$("#invisible").fadeIn("slow");
+			$("#invisible").fadeIn("fast", function(){
+				$("#content").fadeIn("slow");
+			});
 		});
 		return false;
 	}

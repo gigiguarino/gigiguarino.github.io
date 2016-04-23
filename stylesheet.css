@@ -2,6 +2,10 @@ body {
 	background-color: #b1c5bc;
 }
 
+#content {
+	display: none;
+}
+
 #header-flower {
 	position: fixed;
 	right: 0px;
