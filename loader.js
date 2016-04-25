@@ -4,6 +4,8 @@ $(document).on("click", "#content a", function(){
 	if ($(this).attr("class").split(' ')[1] == "invalid")
 	{
 		$("#invisible").css("display", "none");
+		$("#content").css("display", "none");
+		$("#erase4game").css("display", "none");
 		page = $(this).attr("href");
 		$("#content").load(page + ".html", function(){
 			$("#invisible").fadeIn("fast", function(){
@@ -25,6 +27,7 @@ $('a').click(function(){
 		$("#content").css("display", "none");
 		page = $(this).attr("href");
 		$("#content").load(page + ".html", function(){
+			$("#erase4game").fadeIn("fast");
 			$("#invisible").fadeIn("fast", function(){
 				$("#content").fadeIn("slow");
 			});

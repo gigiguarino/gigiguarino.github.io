@@ -1,5 +1,5 @@
 body {
-	background-color: #b1c5bc;
+	background-color: #DCC6CF;
 }
 
 #content {
@@ -13,7 +13,7 @@ body {
 	top: 0px;
 	width: 500px;
 	height: 600px;
-	z-index: 90;
+	z-index: 150;
 	pointer-events: none;
 }
 
@@ -21,14 +21,14 @@ body {
 	position: fixed;
 	right: 10px;
 	top: 10px;
-	z-index: 100;
+	z-index: 200;
 }
 
 #name {
 	position: fixed;
 	right: 285px;
 	top: 0px;
-	z-index: 100;
+	z-index: 200;
 	text-align: right;
 	color: white;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -56,7 +56,7 @@ a:hover {
 	position: fixed;
 	top: 285px;
 	right: -7px;
-	z-index: 100;
+	z-index: 200;
 	text-align: center;
 	font-size: 12px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -70,19 +70,18 @@ a:hover {
 	display: block;
 	position: fixed;
 	height: 2000px;
-	width: 65%;
-	left: 20px;
+	width: 65.5%;
+	left: 15px;
 	top: -100px;
-	background-color: #DCC6CF;
+	background-color: #b1c5bc;
 	z-index: 0;
 }
 
 div.main {
 	display: block;
 	position: absolute;
-	top: 0px;
+	top: -10px;
 	left: 15px;
-	right: 250px;
 	width: 65%;
 	height: 100%;
 	float: left;
@@ -103,7 +102,8 @@ div.main {
 	position: fixed;
 	height: 100%;
 	top: 0px;
-	right: 32%;
+	left: 65%;
+	float: left;
 	z-index: 50;
 }
 
@@ -120,11 +120,12 @@ div.main {
 	color: black;
 }
 
-table.text {
+table {
 	top: 0px;
 	margin: auto;
 	width: 88%;
 	z-index: 50;
+	position: relative;
 }
 
 th {
@@ -140,11 +141,112 @@ td {
 	font-weight: normal;
 }
 
+.square {
+    position: relative;
+    width: 75%;
+    padding-bottom : 75%; 
+    margin: 10%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: #545454;
+	border-style: solid;
+	border-width: 3px;
+}
+
+.rectangle {
+	position: relative;
+    width: 75%;
+    padding-bottom : 38%; 
+    margin: 10%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: #545454;
+	border-style: solid;
+	border-width: 3px;
+}
+
+.purse1 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_0041_zpsyfvak7el.jpg");
+}
+
+.purse2 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3839_zpsectclpgi.jpg");
+}
+
+.purse3 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_2052_zpsxdqnwjbr.jpg");
+}
+
+.purse4 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3840_zpsf7c1l0ru.jpg");
+}
+
+.purse5 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_0040_zps2tmv3xmd.jpg");
+}
+
+.purse6 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3838_zpsnjvonwlq.jpg");
+}
+
+.purse7 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3841_zpsnpqokcwa.jpg");
+}
+
+.band1 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1809_2_2_zpsvifrfyoy.jpg");
+}
+
+.band2 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1806_zpsxqobo783.jpg");	
+}
+
+.band3 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1846_2_2_zpsaamul8ma.jpg");	
+}
+
+.band4 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1733_2_zpsxl0orjwy.jpg");	
+}
+
+.band5 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1331_2_2_zpshodgjtkk.jpg");	
+}
+
+.band6 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1744_3_zpsoxcy8ieg.jpg");	
+}
+
+.band7 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1775_3_zpsyodpizzo.jpg");
+}
+
+.band8 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1727_2_zpsr10vm9k1.jpg");	
+}
+
+.band9 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1432_zpsmuezwsdi.jpg");	
+}
+
+.band10 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1663_3_zpspsndyqse.jpg");	
+}
+
+.band11 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1731_3_zpsdy92ggur.jpg");	
+}
+
+.band12 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1670_3_zpskdxzvejq.jpg");	
+}
 
 #smaller-font {
 	font-size: 15px;
 	text-align: left;
-	line-height: 93%;
+	line-height: 94%;
 }
 
 .smaller {
@@ -160,43 +262,6 @@ ul.classes {
 	list-style: none;
 	padding-left: 0;
 }
-
-table.image-table {
-	top: 0px;
-	left: 0px;
-	z-index: 50;
-}
-
-td.purse {
-	padding: 0px;
-	font-weight: normal;
-	background-color: black;
-}
-
-td.headband {
-	padding: 0px;
-	font-weight: normal;
-	background-color: black;
-}
-
-
-img.purse-image {
-	z-index: 80;
-	position: absolute;
-	margin: auto;
-	color: #57002C;
-	border-style: solid;
-	border-width: 3px;
-}
-
-img.headband-image {
-	z-index: 80;
-	position: absolute;
-	color: #57002C;
-	border-style: solid;
-	border-width: 3px;
-}
-
 
 .subtitle {
 	color: #545454;
@@ -227,60 +292,45 @@ ul {
 	font-size: 11px;
 }
 
-/*
-div.pixels {
-	display: inline-block;
-	width: 70%;
-	margin-top: 75px;
-	margin-right: 200px;
-	float: right;
-	position: static;
-	z-index: 150;
+#UnityObject {
+	float: left;
+	margin-left: 5%;
+	z-index: 100;
+	display: block;
+	position: relative;
 }
 
-img.pixels {
-	display: inline-block;
-	vertical-align: middle;
-	padding-left: 3px;
-	padding-right: 3px;
-	z-index: 200;
-}
-
-*/
-
-.game {
+.game-page {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: #545454;
 	font-size: 12px;
 }
 
-a.game {
-	text-decoration: none;
-}
-
-p.small-text.game {
-	font-size: 10px;
-	position: static;
-}
-
-#link-text.game {
-	font-size: 20px;
-	font-weight: bolder;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	color: #545454;
-	text-decoration: none;
+p.game-page {
 	position: absolute;
-	top: 70px;
-	left: 80px;
-	vertical-align: middle;
-	text-align: center;
+	margin-top: -16px;
+	margin-left: 5%;
+	display: block;
 }
 
-a.special.game {
+a.game-page {
+	text-decoration: none;
+	z-index: 90;
+}
+
+div.small-text {
+	font-size: 10px;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	z-index: 70;
+}
+
+a.special.game-page {
 	color: black;
 }
 
-a.special.game:hover {
+a.special.game-page:hover {
 	color: white;
 }
 
