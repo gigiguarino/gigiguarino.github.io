@@ -2,6 +2,14 @@ body {
 	background-color: #DCC6CF;
 }
 
+#gif {
+  	z-index: 125;
+  	display: block;
+  	bottom: 0;
+  	position: fixed;
+  	left: 68%;
+}
+
 #content {
 	display: none;
 }
@@ -70,7 +78,7 @@ a:hover {
 	display: block;
 	position: fixed;
 	height: 2000px;
-	width: 65.5%;
+	width: 65.75%;
 	left: 15px;
 	top: -100px;
 	background-color: #b1c5bc;
@@ -123,7 +131,7 @@ div.main {
 table {
 	top: 0px;
 	margin: auto;
-	width: 88%;
+	width: 80%;
 	z-index: 50;
 	position: relative;
 }
@@ -143,8 +151,8 @@ td {
 
 .square {
     position: relative;
-    width: 75%;
-    padding-bottom : 75%; 
+    width: 80%;
+    padding-bottom : 80%; 
     margin: 10%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -156,8 +164,8 @@ td {
 
 .rectangle {
 	position: relative;
-    width: 75%;
-    padding-bottom : 38%; 
+    width: 80%;
+    padding-bottom : 40%; 
     margin: 10%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -324,6 +332,7 @@ div.small-text {
 	bottom: 0px;
 	right: 0px;
 	z-index: 70;
+	text-align: right;
 }
 
 a.special.game-page {
