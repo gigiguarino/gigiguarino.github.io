@@ -152,8 +152,8 @@ td {
 
 .square {
     position: relative;
-    width: 80%;
-    padding-bottom : 80%; 
+    width: 100%;
+    padding-bottom : 100%; 
     margin: 10%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -166,8 +166,8 @@ td {
 
 .rectangle {
 	position: relative;
-    width: 80%;
-    padding-bottom : 40%; 
+    width: 100%;
+    padding-bottom : 50%; 
     margin: 10%;
     background-position: center center;
     background-repeat: no-repeat;
