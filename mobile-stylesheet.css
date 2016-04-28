@@ -264,9 +264,19 @@ td {
 	line-height: 94%;
 }
 
-.smaller {
-	font-size: 12px;
+tr.contact {
+	height: 25px;
+}
+
+td.smaller {
+	font-size: 18px;
 	line-height: 92%;
+}
+
+td.smaller2 {
+	font-size: 15px;
+	line-height: 92%;
+	text-align: right;
 }
 
 li {
