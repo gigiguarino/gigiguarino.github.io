@@ -3,8 +3,7 @@ var page;
 $(document).ready(function(){
 	if (window.name != "")
 	{
-		if (window.name == "games.html" ||
-			window.name == "flower-fall.html" ||
+		if (window.name == "flower-fall.html" ||
 			window.name == "battle-planet.html" ||
 			window.name == "tic-tac-toe.html")
 		{
