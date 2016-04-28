@@ -25,7 +25,10 @@ $(document).on("click", "#content a", function(){
 	{
 		$("#invisible").css("display", "none");
 		$("#content").css("display", "none");
-		$("#erase4game").css("display", "none");
+		if (window.name == "games.html")
+		{
+			$("#erase4game").css("display", "none");
+		}
 		window.name = page + ".html";
 		page = $(this).attr("href");
 		$("#content").load(page + ".html", function(){
