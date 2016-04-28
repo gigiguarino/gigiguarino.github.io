@@ -30,8 +30,8 @@ body {
 	right: 20px;
 	top: 20px;
 	z-index: 200;
-	width: 200%;
-	height: 200%;
+	width: 200px;
+	height: 200px;
 }
 
 #name {
