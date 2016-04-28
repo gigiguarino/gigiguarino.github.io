@@ -30,8 +30,8 @@ body {
 	right: 20px;
 	top: 20px;
 	z-index: 200;
-	width: 200px;
-	height: 200px;
+	width: 300px;
+	height: 300px;
 }
 
 #name {
@@ -104,7 +104,7 @@ div.main {
 	left: 0px;
 	top: 0px;
 	z-index: 50;
-	height: 1500px;
+	height: 2000px;
 }
 
 .border2 {
@@ -113,7 +113,7 @@ div.main {
 	top: 0px;
 	right: 0px;
 	z-index: 50;
-	height: 1500px;
+	height: 2000px;
 }
 
 .text {
