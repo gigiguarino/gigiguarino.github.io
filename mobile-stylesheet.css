@@ -138,7 +138,7 @@ table {
 }
 
 th {
-	font-size: 25px;
+	font-size: 40px;
 	font-weight: bolder;
 	border-bottom: 5px;
 	border-bottom: solid;
@@ -259,7 +259,7 @@ td {
 }
 
 #smaller-font {
-	font-size: 15px;
+	font-size: 20px;
 	text-align: left;
 	line-height: 94%;
 }
@@ -280,7 +280,7 @@ ul.classes {
 
 .subtitle {
 	color: #545454;
-	font-size: 15px;
+	font-size: 25px;
 }
 
 a.subtitle:hover {
