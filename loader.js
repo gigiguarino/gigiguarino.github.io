@@ -29,8 +29,8 @@ $(document).on("click", "#content a", function(){
 		{
 			$("#erase4game").css("display", "none");
 		}
-		window.name = page + ".html";
 		page = $(this).attr("href");
+		window.name = page + ".html";
 		$("#content").load(page + ".html", function(){
 			$("#invisible").fadeIn(function(){
 				$("#content").fadeIn("slow");
