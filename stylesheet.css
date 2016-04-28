@@ -101,6 +101,7 @@ div.main {
 	position: absolute;
 	left: 0px;
 	top: 0px;
+	height: 60%;
 	z-index: 50;
 }
 
@@ -109,6 +110,7 @@ div.main {
 	position: absolute;
 	top: 0px;
 	right: 0px;
+	height: 60%;
 	z-index: 50;
 }
 
@@ -157,6 +159,7 @@ td {
     border-color: #545454;
 	border-style: solid;
 	border-width: 3px;
+	z-index: 80;
 }
 
 .rectangle {
@@ -170,6 +173,7 @@ td {
     border-color: #545454;
 	border-style: solid;
 	border-width: 3px;
+	z-index: 80;
 }
 
 .purse8 {
