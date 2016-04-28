@@ -1,0 +1,351 @@
+body {
+	background-color: #DCC6CF;
+}
+
+#gif {
+  	z-index: -10;
+  	display: block;
+  	bottom: 0;
+  	position: fixed;
+  	left: 68%;
+}
+
+#content {
+	display: none;
+}
+
+#header-flower {
+	position: fixed;
+	display: block;
+	right: 0px;
+	top: 0px;
+	width: 1000px;
+	height: 1200px;
+	z-index: 150;
+	pointer-events: none;
+}
+
+#header-pic {
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	z-index: 200;
+}
+
+#name {
+	position: fixed;
+	right: 570px;
+	top: 0px;
+	z-index: 200;
+	text-align: right;
+	color: white;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+#name:hover {
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: #b1c5bc;
+}
+
+#links {
+	display: block;
+	width: 200px;
+	height: 400px;
+	position: fixed;
+	top: 570px;
+	right: -7px;
+	z-index: 200;
+	text-align: center;
+	font-size: 24px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#invisible {
+	display: none;
+}
+
+.color-fill {
+	display: block;
+	position: fixed;
+	height: 2000px;
+	width: 65.75%;
+	left: 15px;
+	top: -100px;
+	background-color: #b1c5bc;
+	z-index: 0;
+}
+
+div.main {
+	display: block;
+	position: absolute;
+	top: -10px;
+	left: 15px;
+	width: 65%;
+	height: 100%;
+	float: left;
+	z-index: 60;
+}
+
+.border {
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 50;
+}
+
+.border2 {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 50;
+}
+
+.text {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #545454;
+}
+
+.other-link {
+	color: #545454;
+}
+
+.other-link:hover {
+	color: black;
+}
+
+table {
+	top: 0px;
+	margin: auto;
+	width: 75%;
+	z-index: 50;
+	position: relative;
+}
+
+th {
+	font-size: 25px;
+	font-weight: bolder;
+	border-bottom: 5px;
+	border-bottom: solid;
+	border-bottom-color: #545454;
+}
+
+td {
+	padding: 0px;
+	font-weight: normal;
+}
+
+.square {
+    position: relative;
+    width: 80%;
+    padding-bottom : 80%; 
+    margin: 10%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: #545454;
+	border-style: solid;
+	border-width: 3px;
+	z-index: 80;
+}
+
+.rectangle {
+	position: relative;
+    width: 80%;
+    padding-bottom : 40%; 
+    margin: 10%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: #545454;
+	border-style: solid;
+	border-width: 3px;
+	z-index: 80;
+}
+
+.purse8 {
+	background-image: url("http://i66.tinypic.com/2z525cj.jpg");
+}
+
+.purse7 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_0041_zpsyfvak7el.jpg");
+}
+
+.purse6 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3839_zpsectclpgi.jpg");
+}
+
+.purse5 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_2052_zpsxdqnwjbr.jpg");
+}
+
+.purse4 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3840_zpsf7c1l0ru.jpg");
+}
+
+.purse3 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_0040_zps2tmv3xmd.jpg");
+}
+
+.purse2 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3838_zpsnjvonwlq.jpg");
+}
+
+.purse1 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3841_zpsnpqokcwa.jpg");
+}
+
+.band12 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1809_2_2_zpsvifrfyoy.jpg");
+}
+
+.band11 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1806_zpsxqobo783.jpg");	
+}
+
+.band10 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1846_2_2_zpsaamul8ma.jpg");	
+}
+
+.band9 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1733_2_zpsxl0orjwy.jpg");	
+}
+
+.band8 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1331_2_2_zpshodgjtkk.jpg");	
+}
+
+.band7 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1744_3_zpsoxcy8ieg.jpg");	
+}
+
+.band6 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1775_3_zpsyodpizzo.jpg");
+}
+
+.band5 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1727_2_zpsr10vm9k1.jpg");	
+}
+
+.band4 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1432_zpsmuezwsdi.jpg");	
+}
+
+.band3 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1663_3_zpspsndyqse.jpg");	
+}
+
+.band2 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1731_3_zpsdy92ggur.jpg");	
+}
+
+.band1 {
+	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1670_3_zpskdxzvejq.jpg");	
+}
+
+#smaller-font {
+	font-size: 15px;
+	text-align: left;
+	line-height: 94%;
+}
+
+.smaller {
+	font-size: 12px;
+	line-height: 92%;
+}
+
+li {
+	text-indent: -2px;
+}
+
+ul.classes {
+	list-style: none;
+	padding-left: 0;
+}
+
+.subtitle {
+	color: #545454;
+	font-size: 15px;
+}
+
+a.subtitle:hover {
+	color: white;
+}
+
+#larger-text-box {
+	color: #545454;
+	border-style: dotted;
+	border-width: 4px;
+	border-radius: 2%;
+	position: absolute;
+	margin: auto;
+	top: 5px;
+	bottom: 5px;
+	right: 5px;
+	left: 5px;
+	width: 275px;
+	height: 1220px;
+	z-index: 60;
+}
+
+ul {
+	font-size: 11px;
+}
+
+#UnityObject {
+	float: left;
+	margin-left: 5%;
+	z-index: 100;
+	display: block;
+	position: relative;
+	background-color: #545454;
+}
+
+.game-page {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #545454;
+	font-size: 12px;
+}
+
+p.game-page {
+	position: absolute;
+	margin-top: -16px;
+	margin-left: 5%;
+	display: block;
+}
+
+a.game-page {
+	text-decoration: none;
+	z-index: 90;
+}
+
+div.small-text {
+	font-size: 10px;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	z-index: 70;
+	text-align: right;
+}
+
+a.special.game-page {
+	color: black;
+}
+
+a.special.game-page:hover {
+	color: white;
+}
+
+
+

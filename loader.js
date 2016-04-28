@@ -9,6 +9,14 @@ $(document).ready(function(){
 			});
 		});
 	}
+	else
+	{
+		$("#content").load("about.html", function(){
+			$("#invisible").fadeIn("slow", function(){
+				$("#content").fadeIn("fast");
+			});
+		});
+	}
 })
 
 
