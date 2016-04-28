@@ -85,6 +85,7 @@ a:hover {
 	top: -100px;
 	background-color: #b1c5bc;
 	z-index: 0;
+	transition: height 9999s;
 }
 
 div.main {
@@ -105,6 +106,7 @@ div.main {
 	top: 0px;
 	z-index: 50;
 	height: 2000px;
+	transition: height 9999s
 }
 
 .border2 {
@@ -114,6 +116,7 @@ div.main {
 	right: 0px;
 	z-index: 50;
 	height: 2000px;
+	transition: height 9999s
 }
 
 .text {
