@@ -12,6 +12,7 @@ $(document).ready(function(){
 		$("#content").load(window.name, function(){
 			$("#invisible").fadeIn("slow", function(){
 				$("#content").fadeIn("fast");
+				$(window).scrollTop(0);
 			});
 		});
 	}
@@ -20,6 +21,7 @@ $(document).ready(function(){
 		$("#content").load("about.html", function(){
 			$("#invisible").fadeIn("slow", function(){
 				$("#content").fadeIn("fast");
+				$(window).scrollTop(0);
 			});
 		});
 	}
@@ -40,6 +42,7 @@ $(document).on("click", "#content a", function(){
 		$("#content").load(page + ".html", function(){
 			$("#invisible").fadeIn(function(){
 				$("#content").fadeIn("slow");
+				$(window).scrollTop(0);
 			});
 		});
 		return false;
@@ -61,6 +64,7 @@ $('a').click(function(){
 			$("#erase4game").fadeIn("slow");
 			$("#invisible").fadeIn(function(){
 				$("#content").fadeIn("slow");
+				$(window).scrollTop(0);
 			});
 		});
 		return false;
