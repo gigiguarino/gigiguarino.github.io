@@ -1,14 +1,27 @@
 var page;
 
+$(document).ready(function(){
+	if (window.name != "")
+	{
+		$("#content").load(window.name, function(){
+			$("#invisible").fadeIn("slow", function(){
+				$("#content").fadeIn("fast");
+			});
+		});
+	}
+})
+
+
 $(document).on("click", "#content a", function(){
 	if ($(this).attr("class").split(' ')[1] == "invalid")
 	{
 		$("#invisible").css("display", "none");
 		$("#content").css("display", "none");
 		$("#erase4game").css("display", "none");
+		window.name = page + ".html";
 		page = $(this).attr("href");
 		$("#content").load(page + ".html", function(){
-			$("#invisible").fadeIn("fast", function(){
+			$("#invisible").fadeIn(function(){
 				$("#content").fadeIn("slow");
 			});
 		});
@@ -26,9 +39,10 @@ $('a').click(function(){
 		$("#invisible").css("display", "none");
 		$("#content").css("display", "none");
 		page = $(this).attr("href");
+		window.name = page + ".html";
 		$("#content").load(page + ".html", function(){
-			$("#erase4game").fadeIn("fast");
-			$("#invisible").fadeIn("fast", function(){
+			$("#erase4game").fadeIn("slow");
+			$("#invisible").fadeIn(function(){
 				$("#content").fadeIn("slow");
 			});
 		});

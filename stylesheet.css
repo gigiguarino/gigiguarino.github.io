@@ -3,7 +3,7 @@ body {
 }
 
 #gif {
-  	z-index: 125;
+  	z-index: -10;
   	display: block;
   	bottom: 0;
   	position: fixed;
@@ -98,20 +98,17 @@ div.main {
 
 .border {
 	display: block;
-	position: fixed;
-	height: 100%;
-	left: 15px;
+	position: absolute;
+	left: 0px;
 	top: 0px;
 	z-index: 50;
 }
 
 .border2 {
 	display: block;
-	position: fixed;
-	height: 100%;
+	position: absolute;
 	top: 0px;
-	left: 65%;
-	float: left;
+	right: 0px;
 	z-index: 50;
 }
 
@@ -131,7 +128,7 @@ div.main {
 table {
 	top: 0px;
 	margin: auto;
-	width: 80%;
+	width: 75%;
 	z-index: 50;
 	position: relative;
 }
@@ -175,15 +172,19 @@ td {
 	border-width: 3px;
 }
 
-.purse1 {
+.purse8 {
+	background-image: url("http://i66.tinypic.com/2z525cj.jpg");
+}
+
+.purse7 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_0041_zpsyfvak7el.jpg");
 }
 
-.purse2 {
+.purse6 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3839_zpsectclpgi.jpg");
 }
 
-.purse3 {
+.purse5 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_2052_zpsxdqnwjbr.jpg");
 }
 
@@ -191,63 +192,63 @@ td {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3840_zpsf7c1l0ru.jpg");
 }
 
-.purse5 {
+.purse3 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_0040_zps2tmv3xmd.jpg");
 }
 
-.purse6 {
+.purse2 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3838_zpsnjvonwlq.jpg");
 }
 
-.purse7 {
+.purse1 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3841_zpsnpqokcwa.jpg");
 }
 
-.band1 {
+.band12 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1809_2_2_zpsvifrfyoy.jpg");
 }
 
-.band2 {
+.band11 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1806_zpsxqobo783.jpg");	
 }
 
-.band3 {
+.band10 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1846_2_2_zpsaamul8ma.jpg");	
 }
 
-.band4 {
+.band9 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1733_2_zpsxl0orjwy.jpg");	
 }
 
-.band5 {
+.band8 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1331_2_2_zpshodgjtkk.jpg");	
 }
 
-.band6 {
+.band7 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1744_3_zpsoxcy8ieg.jpg");	
 }
 
-.band7 {
+.band6 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1775_3_zpsyodpizzo.jpg");
 }
 
-.band8 {
+.band5 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1727_2_zpsr10vm9k1.jpg");	
 }
 
-.band9 {
+.band4 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1432_zpsmuezwsdi.jpg");	
 }
 
-.band10 {
+.band3 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1663_3_zpspsndyqse.jpg");	
 }
 
-.band11 {
+.band2 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1731_3_zpsdy92ggur.jpg");	
 }
 
-.band12 {
+.band1 {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1670_3_zpskdxzvejq.jpg");	
 }
 
@@ -306,6 +307,7 @@ ul {
 	z-index: 100;
 	display: block;
 	position: relative;
+	background-color: #545454;
 }
 
 .game-page {
