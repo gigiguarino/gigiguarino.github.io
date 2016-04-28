@@ -265,16 +265,16 @@ td {
 }
 
 tr.contact {
-	height: 25px;
+	height: 35px;
 }
 
 td.smaller {
-	font-size: 18px;
+	font-size: 25px;
 	line-height: 92%;
 }
 
 td.smaller2 {
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 92%;
 	text-align: right;
 }
