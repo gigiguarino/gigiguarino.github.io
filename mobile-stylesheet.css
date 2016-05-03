@@ -80,7 +80,7 @@ a:hover {
 	position: fixed;
 	height: 2500px;
 	width: 65.75%;
-	left: 15px;
+	left: 20px;
 	top: -100px;
 	background-color: #b1c5bc;
 	z-index: 0;
@@ -90,7 +90,7 @@ div.main {
 	display: block;
 	position: absolute;
 	top: -10px;
-	left: 15px;
+	left: 20px;
 	width: 65%;
 	height: 100%;
 	float: left;
