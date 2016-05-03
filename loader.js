@@ -3,12 +3,6 @@ var page;
 $(document).ready(function(){
 	if (window.name != "")
 	{
-		if (window.name == "flower-fall.html" ||
-			window.name == "battle-planet.html" ||
-			window.name == "tic-tac-toe.html")
-		{
-			$("#erase4game").css("display", "none");
-		}
 		$("#content").load(window.name, function(){
 			$("#invisible").fadeIn("slow", function(){
 				$("#content").fadeIn("fast");
@@ -33,10 +27,6 @@ $(document).on("click", "#content a", function(){
 	{
 		$("#invisible").css("display", "none");
 		$("#content").css("display", "none");
-		if (window.name == "games.html")
-		{
-			$("#erase4game").css("display", "none");
-		}
 		page = $(this).attr("href");
 		window.name = page + ".html";
 		$("#content").load(page + ".html", function(){
@@ -61,7 +51,6 @@ $('a').click(function(){
 		page = $(this).attr("href");
 		window.name = page + ".html";
 		$("#content").load(page + ".html", function(){
-			$("#erase4game").fadeIn("slow");
 			$("#invisible").fadeIn(function(){
 				$("#content").fadeIn("slow");
 				$(window).scrollTop(0);

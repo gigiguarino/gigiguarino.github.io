@@ -1,5 +1,6 @@
 body {
 	background-color: #DCC6CF;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 #gif {
@@ -41,7 +42,6 @@ body {
 	z-index: 200;
 	text-align: right;
 	color: white;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 26px;
 	text-decoration: none;
 }
@@ -69,7 +69,6 @@ a:hover {
 	z-index: 200;
 	text-align: center;
 	font-size: 24px;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 #invisible {
@@ -116,11 +115,7 @@ div.main {
 	height: 2000px;
 }
 
-.text {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	color: #545454;
-}
-
+.text,
 .other-link {
 	color: #545454;
 }
@@ -319,50 +314,41 @@ ul {
 	font-size: 11px;
 }
 
-#UnityObject {
-	float: left;
-	margin-left: 5%;
-	margin-top: 50%;
-	z-index: 100;
-	display: block;
-	position: relative;
-	background-color: #545454;
+div.unity {
+	margin: auto;
+    width: 960px;
 }
 
-.game-page {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	color: #545454;
-	font-size: 12px;
+div.broken,
+div.missing {
+  margin: auto;
+  position: relative;
+  top: 50%;
+  width: 193px;
 }
 
-p.game-page {
-	position: absolute;
-	margin-top: -16px;
-	margin-left: 5%;
-	display: block;
+div.broken a,
+div.missing a {
+  height: 63px;
+  position: relative;
+  top: -31px;
 }
 
-a.game-page {
-	text-decoration: none;
-	z-index: 90;
+div.broken img,
+div.missing img {
+  border-width: 0px;
 }
 
-div.small-text {
-	font-size: 10px;
-	position: fixed;
-	bottom: 0px;
-	right: 0px;
-	z-index: 70;
-	text-align: right;
+div.broken {
+  display: none;
 }
 
-a.special.game-page {
-	color: black;
+div#unityPlayer {
+  cursor: default;
+  height: 600px;
+  width: 960px;
 }
 
-a.special.game-page:hover {
-	color: white;
-}
 
 
 

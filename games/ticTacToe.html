@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Unity Web Player | ticTacToe</title>
+		<title>Tic Tac Toe</title>
 		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
 		<script type="text/javascript">
 		<!--
@@ -15,7 +15,7 @@
 		<script type="text/javascript">
 		<!--
 			var config = {
-				width: 1200, 
+				width: 750, 
 				height: 600,
 				params: { enableDebugging:"0" }
 				
@@ -56,16 +56,16 @@
 						break;
 					}
 				});
-				u.initPlugin(jQuery("#unityPlayer")[0], "ticTacToeWeb.unity3d");
+				u.initPlugin(jQuery("#unityPlayer")[0], "ticTacToe.unity3d");
 			});
 		-->
 		</script>
 		<style type="text/css">
 		<!--
 		body {
-			font-family: Helvetica, Verdana, Arial, sans-serif;
-			background-color: white;
-			color: black;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			background-color: #DCC6CF;
+			color: #545454;
 			text-align: center;
 		}
 		a:link, a:visited {
@@ -85,7 +85,8 @@
 		}
 		div.content {
 			margin: auto;
-			width: 1200px;
+			width: 750px;
+			background-color: #545454;
 		}
 		div.broken,
 		div.missing {
@@ -110,13 +111,12 @@
 		div#unityPlayer {
 			cursor: default;
 			height: 600px;
-			width: 1200px;
+			width: 750px;
 		}
 		-->
 		</style>
 	</head>
 	<body>
-		<p class="header"><span>Unity Web Player | </span>ticTacToe</p>
 		<div class="content">
 			<div id="unityPlayer">
 				<div class="missing">

@@ -1,5 +1,6 @@
 body {
 	background-color: #DCC6CF;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 #gif {
@@ -41,7 +42,6 @@ body {
 	z-index: 200;
 	text-align: right;
 	color: white;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 12px;
 	text-decoration: none;
 }
@@ -69,7 +69,6 @@ a:hover {
 	z-index: 200;
 	text-align: center;
 	font-size: 12px;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 #invisible {
@@ -116,11 +115,7 @@ div.main {
 	height: 1000px;
 }
 
-.text {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	color: #545454;
-}
-
+.text,
 .other-link {
 	color: #545454;
 }
@@ -317,50 +312,4 @@ a.subtitle:hover {
 ul {
 	font-size: 11px;
 }
-
-#UnityObject {
-	float: left;
-	margin-left: 5%;
-	z-index: 100;
-	display: block;
-	position: relative;
-	background-color: #545454;
-}
-
-.game-page {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	color: #545454;
-	font-size: 12px;
-}
-
-p.game-page {
-	position: absolute;
-	margin-top: -16px;
-	margin-left: 5%;
-	display: block;
-}
-
-a.game-page {
-	text-decoration: none;
-	z-index: 90;
-}
-
-div.small-text {
-	font-size: 10px;
-	position: fixed;
-	bottom: 0px;
-	right: 0px;
-	z-index: 70;
-	text-align: right;
-}
-
-a.special.game-page {
-	color: black;
-}
-
-a.special.game-page:hover {
-	color: white;
-}
-
-
 
