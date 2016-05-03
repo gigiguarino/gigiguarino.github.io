@@ -121,7 +121,7 @@ div.main {
 }
 
 .other-link:hover {
-	color: black;
+	color: white;
 }
 
 table {
@@ -133,7 +133,7 @@ table {
 }
 
 th {
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: bolder;
 	border-bottom: 5px;
 	border-bottom: solid;
@@ -298,7 +298,7 @@ ul.classes {
 
 .subtitle {
 	color: #545454;
-	font-size: 15px;
+	font-size: 20px;
 }
 
 a.subtitle:hover {
