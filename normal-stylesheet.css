@@ -325,3 +325,8 @@ ul {
 	font-size: 11px;
 }
 
+img.preview {
+	width: 100%;
+	position: relative;
+}
+

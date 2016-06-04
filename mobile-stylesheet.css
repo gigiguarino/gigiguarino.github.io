@@ -361,6 +361,10 @@ div#unityPlayer {
   width: 960px;
 }
 
+img.preview {
+	width: 100%;
+	position: relative;
+}
 
 
 
