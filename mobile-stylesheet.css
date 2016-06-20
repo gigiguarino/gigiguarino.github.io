@@ -1,177 +1,119 @@
+/* ALL PAGES */
+
 body {
-	background-color: #DCC6CF;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-#gif {
-  	z-index: -10;
-  	display: block;
-  	bottom: 0;
-  	position: fixed;
-  	left: 68%;
-}
-
-#content {
-	display: none;
-}
-
-#header-flower {
-	position: fixed;
-	display: block;
-	right: 0px;
-	top: 0px;
-	width: 1000px;
-	height: 1200px;
-	z-index: 150;
-	pointer-events: none;
-}
-
-#header-pic {
-	position: fixed;
-	right: 20px;
-	top: 20px;
-	z-index: 200;
-	width: 300px;
-	height: 300px;
-}
-
-#name {
-	position: fixed;
-	right: 570px;
-	top: 0px;
-	z-index: 200;
-	text-align: right;
-	color: white;
-	font-size: 26px;
-	text-decoration: none;
-}
-
-#name:hover {
-	color: white;
+	background-color: #62966B;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: black;
 }
 
 a {
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 
 a:hover {
-	color: #b1c5bc;
+	color: white;
 }
 
-#links {
-	display: block;
-	width: 200px;
-	height: 400px;
+div.sidebar {
+	right: 0px;
+	top: 0px;
 	position: fixed;
-	top: 570px;
-	right: -14px;
 	z-index: 200;
-	text-align: center;
-	font-size: 24px;
 }
 
-#invisible {
-	display: none;
-}
-
-.color-fill {
-	display: block;
+div.flowers {
 	position: fixed;
-	height: 2500px;
-	width: 65.75%;
-	left: 20px;
-	top: -100px;
-	background-color: #b1c5bc;
-	z-index: 0;
+	height: 55%;
+	right: -5px;
+	bottom: -15px;
+	z-index: 100;
+}
+
+img.link {
+	display: block;
+	right: 0px;
+	float: right;
 }
 
 div.main {
 	display: block;
-	position: absolute;
-	top: -10px;
-	left: 20px;
+	left: 0px;
 	width: 65%;
 	height: 100%;
 	float: left;
-	z-index: 60;
-}
-
-.border {
-	display: block;
-	position: absolute;
-	left: 0px;
-	top: 0px;
 	z-index: 50;
-	height: 2000px;
 }
 
-.border2 {
+div.title {
+	width: 100%;
+	text-align: center;
+}
+
+div.text {
 	display: block;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	z-index: 50;
-	height: 2000px;
+	background-color: #DDDDDD;
+	width: 75%;
+	left: 10%;
+	margin: auto;
+	padding: 5%;
+	border-width: 7px;
+	border-style: solid;
+	border-color: black;
+	line-height: 100%;
 }
 
-.text,
-.other-link {
-	color: #545454;
+h1 {
+	font-size: 20px;
+	text-align: center;
 }
 
-.other-link:hover {
-	color: white;
+/* ABOUT PAGE */
+
+.head {
+	text-align: center;
 }
+
+/* GAMES PAGE */
+
+img.preview {
+	width: 100%;
+	position: relative;
+}
+
+p.game {
+	text-align: center;
+}
+
+a.game {
+	font-size: 26px;
+}
+
+/* CONTACTS PAGE */
 
 table {
-	top: 250px;
+	top: 0px;
 	margin: auto;
-	width: 65%;
+	width: 75%;
 	z-index: 50;
 	position: relative;
 }
 
-th {
-	font-size: 40px;
-	font-weight: bolder;
-	border-bottom: 5px;
-	border-bottom: solid;
-	border-bottom-color: #545454;
+tr.contact {
+	height: 25px;
 }
 
 td {
 	padding: 0px;
+	text-align: left;
 	font-weight: normal;
 }
 
-.square {
-    position: relative;
-    width: 80%;
-    padding-bottom : 80%; 
-    margin: 10%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-color: #545454;
-	border-style: solid;
-	border-width: 3px;
-	z-index: 80;
+td.contact {
+	text-align: right;
 }
 
-.rectangle {
-	position: relative;
-    width: 80%;
-    padding-bottom : 40%; 
-    margin: 10%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-color: #545454;
-	border-style: solid;
-	border-width: 3px;
-	z-index: 80;
-}
+/* ARTWORK PAGE */
 
 .purse11 {
 	background-image: url("http://i66.tinypic.com/2z525cj.jpg");
@@ -265,106 +207,7 @@ td {
 	background-image: url("http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1670_3_zpskdxzvejq.jpg");	
 }
 
-#smaller-font {
-	font-size: 20px;
-	text-align: left;
-	line-height: 94%;
-}
 
-tr.contact {
-	height: 35px;
-}
-
-td.smaller {
-	font-size: 25px;
-	line-height: 92%;
-}
-
-td.smaller2 {
-	font-size: 20px;
-	line-height: 92%;
-	text-align: right;
-}
-
-li {
-	text-indent: -2px;
-	padding-bottom: 5px;
-}
-
-ul.classes {
-	font-size: 20px;
-	list-style: none;
-	padding-left: 0;
-}
-
-.subtitle {
-	color: #545454;
-	font-size: 25px;
-}
-
-a.subtitle:hover {
-	color: white;
-}
-
-#larger-text-box {
-	color: #545454;
-	border-style: dotted;
-	border-width: 4px;
-	border-radius: 2%;
-	position: absolute;
-	margin: auto;
-	top: 5px;
-	bottom: 5px;
-	right: 5px;
-	left: 5px;
-	width: 275px;
-	height: 1220px;
-	z-index: 60;
-}
-
-ul {
-	font-size: 11px;
-}
-
-div.unity {
-	margin: auto;
-    width: 960px;
-}
-
-div.broken,
-div.missing {
-  margin: auto;
-  position: relative;
-  top: 50%;
-  width: 193px;
-}
-
-div.broken a,
-div.missing a {
-  height: 63px;
-  position: relative;
-  top: -31px;
-}
-
-div.broken img,
-div.missing img {
-  border-width: 0px;
-}
-
-div.broken {
-  display: none;
-}
-
-div#unityPlayer {
-  cursor: default;
-  height: 600px;
-  width: 960px;
-}
-
-img.preview {
-	width: 100%;
-	position: relative;
-}
 
 
 
