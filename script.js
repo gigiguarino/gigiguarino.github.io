@@ -32,4 +32,3 @@ app.controller('mainController', ['$scope', function($scope){
 app.controller('photoController', ['$scope', function($scope){
 
 }]);
-
