@@ -4,7 +4,7 @@ body {
 	background-color: #62966B;
 	font-family: Tahoma, Geneva, sans-serif;
 	color: black;
-	font-size: 40px;
+	font-size: 30px;
 }
 
 a {
@@ -32,7 +32,7 @@ div.flowers {
 }
 
 #flower-image {
-	height: 200%;
+	height: 400%;
 }
 
 img.link {
