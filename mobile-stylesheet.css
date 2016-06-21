@@ -33,13 +33,14 @@ div.flowers {
 
 img.flowers {
 	display: block;
-	height: 400%;
+	height: 500px;
 }
 
 img.link {
 	display: block;
 	right: 0px;
 	float: right;
+	height: 20px;
 }
 
 div.main {
