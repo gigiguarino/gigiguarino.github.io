@@ -57,6 +57,10 @@ div.title {
 	text-align: center;
 }
 
+img.title {
+	height: 100px;
+}
+
 div.text {
 	display: block;
 	background-color: #DDDDDD;
