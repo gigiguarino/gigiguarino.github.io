@@ -4,7 +4,7 @@ body {
 	background-color: #62966B;
 	font-family: Tahoma, Geneva, sans-serif;
 	color: black;
-	font-size: 24px;
+	font-size: 40px;
 }
 
 a {
@@ -31,6 +31,10 @@ div.flowers {
 	z-index: 100;
 }
 
+#flower-image {
+	height: 200%;
+}
+
 img.link {
 	display: block;
 	right: 0px;
@@ -40,7 +44,7 @@ img.link {
 div.main {
 	display: block;
 	left: 0px;
-	width: 90%;
+	width: 80%;
 	height: 100%;
 	float: left;
 	z-index: 50;
