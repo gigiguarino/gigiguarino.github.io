@@ -32,6 +32,7 @@ div.flowers {
 }
 
 img.flowers {
+	display: block;
 	height: 400%;
 }
 
