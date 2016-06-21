@@ -68,6 +68,11 @@ h1 {
 	text-align: center;
 }
 
+/* CLASSES PAGE */
+.classes {
+	line-height: 145%;
+}
+
 /* GAMES PAGE */
 
 img.preview {
