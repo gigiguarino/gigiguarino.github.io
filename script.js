@@ -26,6 +26,9 @@ app.config(['$routeProvider', function($routeProvider) {
 			redirectTo: '/about'
 		});
 }])
+app.controller('mainController', ['$scope', function($scope){
+
+}]);
 app.controller('purseController', ['$scope', function($scope){
 
 }]);
