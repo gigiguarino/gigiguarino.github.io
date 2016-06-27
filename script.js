@@ -35,7 +35,6 @@ app.controller('purse-controller', ['$scope', function($scope){
 	$scope.purse = "http://i66.tinypic.com/2z525cj.jpg";
 
 	function update(){
-		alert($scope.currentNum);
 		switch($scope.currentNum)
 		{
 			case 0:
