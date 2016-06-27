@@ -29,6 +29,7 @@ div.flowers {
 	right: -5px;
 	bottom: -5px;
 	z-index: 100;
+	pointer-events: none;
 }
 
 img.flowers {
@@ -149,12 +150,20 @@ td.contact {
 	display: inline-block;
 	width: 70%;
 	margin: auto;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	background-color: black;
 }
 
 .headband-image {
 	display: inline-block;
 	width: 70%;
 	margin: auto;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	background-color: black;
 }
 
 img.art {

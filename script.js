@@ -33,9 +33,9 @@ app.controller('main-controller', ['$scope', function($scope){
 app.controller('purse-controller', ['$scope', function($scope){
 	$scope.currentNum = 0;
 	$scope.purse = "http://i66.tinypic.com/2z525cj.jpg";
-	maxNum = 10;
 
 	function update(){
+		alert($scope.currentNum);
 		switch($scope.currentNum)
 		{
 			case 0:
@@ -77,7 +77,7 @@ app.controller('purse-controller', ['$scope', function($scope){
 	}
 
 	$scope.next = function next(){
-		if ($scope.currentNum == maxNum){
+		if ($scope.currentNum == 10){
 			$scope.currentNum = 0;
 		}
 		else {
@@ -89,7 +89,7 @@ app.controller('purse-controller', ['$scope', function($scope){
 
 	$scope.previous = function previous(){
 		if ($scope.currentNum == 0){
-			$scope.currentNum = maxNum;
+			$scope.currentNum = 10;
 		}
 		else {
 			$scope.currentNum = $scope.currentNum - 1;
@@ -102,7 +102,6 @@ app.controller('purse-controller', ['$scope', function($scope){
 app.controller('headband-controller', ['$scope', function($scope){
 	$scope.currentNum = 0;
 	$scope.headband = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_1809_2_2_zpsvifrfyoy.jpg";
-	maxNum = 11;
 
 	function update(){
 		switch($scope.currentNum)
@@ -149,7 +148,7 @@ app.controller('headband-controller', ['$scope', function($scope){
 	}
 
 	$scope.next = function next(){
-		if ($scope.currentNum == maxNum){
+		if ($scope.currentNum == 11){
 			$scope.currentNum = 0;
 		}
 		else {
@@ -161,7 +160,7 @@ app.controller('headband-controller', ['$scope', function($scope){
 
 	$scope.previous = function previous(){
 		if ($scope.currentNum == 0){
-			$scope.currentNum = maxNum;
+			$scope.currentNum = 11;
 		}
 		else {
 			$scope.currentNum = $scope.currentNum - 1;
