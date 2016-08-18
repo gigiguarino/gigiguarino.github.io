@@ -8,10 +8,7 @@
 	<div class="text">
 		<h1>Purses</h1>
 		<p>	
-			I use my sewing machine to make these purses. I like small purses
-			because I usually don't carry many things around with me, and they
-			are much easier to make when they're small. I have made purses for
-			friends in the past, so if you're interested in one, let me know!
+			My sewing skills aren't great enough to make clothing, so I stick to making as many purses as I can.
 		</p><br>
 		<div class="image-selector" ng-controller="purse-controller">
 			<div class="left-arrow"><img src="http://i63.tinypic.com/10565xk.png" class="art" ng-click="previous()"/></div>
@@ -21,9 +18,21 @@
 	</div>
 	<br><br>
 	<div class="text">
+		<h1>Embroidery</h1>
+		<p>
+			Like drawing but with string.
+		</p><br>
+		<div class="image-selector" ng-controller="embroidery-controller">
+			<div class="left-arrow"><img src="http://i63.tinypic.com/10565xk.png" class="art" ng-click="previous()"/></div>
+			<div class="embroidery-image"><img ng-src="{{embroidery}}" class="art"/></div>
+			<div class="right-arrow"><img src="http://i63.tinypic.com/30cbsk9.jpg" class="art" ng-click="next()"/></div>
+		</div>
+	</div>
+	<br><br>
+	<div class="text">
 		<h1>Headbands</h1>
 		<p>
-			I learned how to knit after joining a knitting club at school. These handbands only take me a couple hours each, and are super warm during the winter.
+			I learned how to knit after joining a knitting club at school, Scarves with a Purpose.
 		</p><br>
 		<div class="image-selector" ng-controller="headband-controller">
 			<div class="left-arrow"><img src="http://i63.tinypic.com/10565xk.png" class="art" ng-click="previous()"/></div>
@@ -31,6 +40,7 @@
 			<div class="right-arrow"><img src="http://i63.tinypic.com/30cbsk9.jpg" class="art" ng-click="next()"/></div>
 		</div>
 	</div>
+	
 	<br>
 	<br>
 	<br>

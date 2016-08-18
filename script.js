@@ -32,42 +32,48 @@ app.controller('main-controller', ['$scope', function($scope){
 
 app.controller('purse-controller', ['$scope', function($scope){
 	$scope.currentNum = 0;
-	$scope.purse = "http://i66.tinypic.com/2z525cj.jpg";
+	$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/pic%20-%202_zpsajppffni.jpg";
 
 	function update(){
 		switch($scope.currentNum)
 		{
-			case 0:
-				$scope.purse = "http://i66.tinypic.com/2z525cj.jpg";
+			case 0: 
+				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/pic%20-%202_zpsajppffni.jpg";
 				break;
 			case 1:
-				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_0041_zpsyfvak7el.jpg";
+				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/pic%20-%203_zpshdago7uz.jpg";
 				break;
 			case 2:
-				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/image1-9_zps7ydyhyue.jpg";
+				$scope.purse = "http://i66.tinypic.com/2z525cj.jpg";
 				break;
 			case 3:
-				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3839_zpsectclpgi.jpg";
+				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_0041_zpsyfvak7el.jpg";
 				break;
 			case 4:
-				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_2052_zpsxdqnwjbr.jpg";
+				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/image1-9_zps7ydyhyue.jpg";
 				break;
 			case 5:
-				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/image2-4_zpsqzccovg9.jpg";
+				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3839_zpsectclpgi.jpg";
 				break;
 			case 6:
-				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3840_zpsf7c1l0ru.jpg";
+				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_2052_zpsxdqnwjbr.jpg";
 				break;
 			case 7:
-				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_0040_zps2tmv3xmd.jpg";
+				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/image2-4_zpsqzccovg9.jpg";
 				break;
 			case 8:
-				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/image3-2_zpsaomdkr8j.jpg";
+				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3840_zpsf7c1l0ru.jpg";
 				break;
 			case 9:
-				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3838_zpsnjvonwlq.jpg";
+				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_0040_zps2tmv3xmd.jpg";
 				break;
 			case 10:
+				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/image3-2_zpsaomdkr8j.jpg";
+				break;
+			case 11:
+				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3838_zpsnjvonwlq.jpg";
+				break;
+			case 12:
 				$scope.purse = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/IMG_3841_zpsnpqokcwa.jpg";
 				break;
 			default:
@@ -76,7 +82,7 @@ app.controller('purse-controller', ['$scope', function($scope){
 	}
 
 	$scope.next = function next(){
-		if ($scope.currentNum == 10){
+		if ($scope.currentNum == 12){
 			$scope.currentNum = 0;
 		}
 		else {
@@ -88,7 +94,7 @@ app.controller('purse-controller', ['$scope', function($scope){
 
 	$scope.previous = function previous(){
 		if ($scope.currentNum == 0){
-			$scope.currentNum = 10;
+			$scope.currentNum = 12;
 		}
 		else {
 			$scope.currentNum = $scope.currentNum - 1;
@@ -160,6 +166,53 @@ app.controller('headband-controller', ['$scope', function($scope){
 	$scope.previous = function previous(){
 		if ($scope.currentNum == 0){
 			$scope.currentNum = 11;
+		}
+		else {
+			$scope.currentNum = $scope.currentNum - 1;
+		}
+
+		update();
+	}
+}]);
+
+app.controller('embroidery-controller', ['$scope', function($scope){
+	$scope.currentNum = 0;
+	$scope.embroidery = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/pic%20-%206_zpsuf3je08w.jpg";
+
+	function update(){
+		switch($scope.currentNum)
+		{
+			case 0:
+				$scope.embroidery = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/pic%20-%206_zpsuf3je08w.jpg";
+				break;
+			case 1:
+				$scope.embroidery = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/pic%20-%205_zpslfi6r1cc.jpg";
+				break;
+			case 2:
+				$scope.embroidery = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/pic%20-%201_zpsitohz1gq.jpg";
+				break;
+			case 3:
+				$scope.embroidery = "http://i900.photobucket.com/albums/ac202/gabrielleguarino/pic%20-%204_zpsgegvc07h.jpg";
+				break;
+			default:
+				break;
+		}
+	}
+
+	$scope.next = function next(){
+		if ($scope.currentNum == 3){
+			$scope.currentNum = 0;
+		}
+		else {
+			$scope.currentNum = $scope.currentNum + 1;
+		}
+
+		update();
+	}
+
+	$scope.previous = function previous(){
+		if ($scope.currentNum == 0){
+			$scope.currentNum = 3;
 		}
 		else {
 			$scope.currentNum = $scope.currentNum - 1;
