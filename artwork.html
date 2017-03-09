@@ -5,32 +5,35 @@
 		<img src="http://i68.tinypic.com/e0oe44.png" class="title"/>
 	</div>
 	<br><br>
-	<div class="text">
-		<h1>Purses</h1><br>
-		<div class="image-selector" ng-controller="purse-controller">
-			<div class="left-arrow"><img src="http://i63.tinypic.com/10565xk.png" class="art" ng-click="previous()"/></div>
-			<div class="purse-image"><img ng-src="{{purse}}" class="art"/></div>
-			<div class="right-arrow"><img src="http://i63.tinypic.com/30cbsk9.jpg" class="art" ng-click="next()"/></div>
+
+
+	<div ng-controller="art-controller">
+		<div class="images">
+			<div class="art-image1">
+				<div class="purse-image" ng-repeat="x in purses1">
+					<img ng-src="images/{{x}}.jpg" class="art"/>
+				</div>
+				<div class="embroidery-image" ng-repeat="x in embroideries1">
+					<img ng-src="images/{{x}}.jpg" class="art"/>
+				</div>
+				<div class="headband-image" ng-repeat="x in headbands1">
+					<img ng-src="images/{{x}}.jpg" class="art"/>
+				</div>
+			</div>
+			<div class="art-image2">
+				<div class="purse-image" ng-repeat="x in purses2">
+					<img ng-src="images/{{x}}.jpg" class="art"/>
+				</div>
+				<div class="embroidery-image" ng-repeat="x in embroideries2">
+					<img ng-src="images/{{x}}.jpg" class="art"/>
+				</div>
+				<div class="headband-image" ng-repeat="x in headbands2">
+					<img ng-src="images/{{x}}.jpg" class="art"/>
+				</div>
+			</div>
 		</div>
 	</div>
-	<br><br>
-	<div class="text">
-		<h1>Embroidery</h1><br>
-		<div class="image-selector" ng-controller="embroidery-controller">
-			<div class="left-arrow"><img src="http://i63.tinypic.com/10565xk.png" class="art" ng-click="previous()"/></div>
-			<div class="embroidery-image"><img ng-src="{{embroidery}}" class="art"/></div>
-			<div class="right-arrow"><img src="http://i63.tinypic.com/30cbsk9.jpg" class="art" ng-click="next()"/></div>
-		</div>
-	</div>
-	<br><br>
-	<div class="text">
-		<h1>Headbands</h1><br>
-		<div class="image-selector" ng-controller="headband-controller">
-			<div class="left-arrow"><img src="http://i63.tinypic.com/10565xk.png" class="art" ng-click="previous()"/></div>
-			<div class="headband-image"><img ng-src="{{headband}}" class="art"/></div>
-			<div class="right-arrow"><img src="http://i63.tinypic.com/30cbsk9.jpg" class="art" ng-click="next()"/></div>
-		</div>
-	</div>
+
 	<br>
 	<br>
 	<br>
