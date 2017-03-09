@@ -28,7 +28,6 @@ div.flowers {
 	position: fixed;
 	right: -5px;
 	bottom: -5px;
-	z-index: 100;
 	pointer-events: none;
 }
 
@@ -38,6 +37,7 @@ img.gif {
 	top: 0px;
 	right: 0px;
 	z-index: 500;
+	pointer-events: none;
 }
 
 img.flowers {
