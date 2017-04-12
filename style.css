@@ -1,8 +1,9 @@
 
 img {
   position: fixed;
-  display: block;
-  margin: auto;
-  vertical-align: middle;
+  top: 25%;
+  bottom: 25%;
+  left: 25%;
+  right: 25%;
   width: 50%;
 }
