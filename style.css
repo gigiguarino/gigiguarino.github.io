@@ -1,8 +1,6 @@
 
 img {
   position: fixed;
-  top: 45%;
-  left: 45%;
-  right: 45%;
-  bottom: 45%; 
-}
+  margin: auto;
+  vertical-align: middle;
+
