@@ -5,8 +5,8 @@ var INVALID_COLOR = "red";
 var VALID_COLOR = "#3e3e3e";
 var NORMAL_FONT = "#3e3e3e";
 var DARK_FONT = "black";
-var DARK_BG = "#c5e2c5";
-var LIGHT_BG = "#ebfdeb";
+var DARK_BG = "#fdc680";
+var LIGHT_BG = "#ffd7a4";
 var NUM_BOARDS = 600;
 
 

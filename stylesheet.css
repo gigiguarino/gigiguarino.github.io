@@ -1,7 +1,7 @@
 
 
 body {
-	background-color: #eeeeee;
+	background-color: #fde9cf;
 	font-family: monospace;
 	color: #3e3e3e;
 }
@@ -51,7 +51,7 @@ body {
 	display: inline-block;
 	border-style: solid;
 	border-width: 5px;
-	border-color: #a8d4a8;
+	border-color: #3e3e3e;
 	width: 190px;
 	height: 190px;
 	font-size: 0px;
@@ -59,16 +59,16 @@ body {
 
 .box {
 	display: inline-block;
-	background-color: #ebfdeb;
-	width: 53.3333333333px;
-	height: 53.333333333px;
+	background-color: #efefef;
+	width: 53.34px;
+	height: 54px;
 	border-style: solid;
 	border-width: 5px;
-	border-color: #95bf95;
+	border-color: #3e3e3e;
 	font-size: 20px;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 53.333333333px;
+	line-height: 53.3333333334px;
 }
 
 .buttons {
@@ -80,7 +80,7 @@ body {
 
 .button {
 	display: block;
-	background-color: #ebfdeb;
+	background-color: #ffd7a4;
 	border-color: #3e3e3e;
 	
 	border-style: solid;
