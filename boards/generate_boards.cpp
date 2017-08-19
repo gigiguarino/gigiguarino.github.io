@@ -11,6 +11,19 @@
 using namespace std;
 
 
+enum level { EASY, MEDIUM, HARD };
+
+// each square in easy has either 4 or 5 or 6
+// each square in medium has either 3 or 4
+// each square in hard has either 2 or 3
+
+int min_easy = 4;
+int max_easy = 6;
+int min_med = 3;
+int max_med = 4;
+int min_hard = 2;
+int max_hard = 3;
+
 
 //////////////////////////////////////
 // SPOT struct
@@ -164,6 +177,8 @@ bool in_square(SPOT s, vector<SPOT> spots)
   return false;
 }
 
+
+
 //////////////////////////////////////
 // make_correct_string()
 // creates the string for the file
@@ -184,6 +199,25 @@ string make_string(string type)
   }
 
   return s;
+}
+
+
+//////////////////////////////////////
+// print()
+// prints out all the strings
+//////////////////////////////////////
+void print()
+{
+  string current;
+  while(!corrects.empty() && !starts.empty())
+  {
+    current = corrects.back();
+    corrects.pop_back();
+    cout << current << endl;
+    current = starts.back();
+    starts.pop_back();
+    cout << current << endl << endl;
+  }
 }
 
 
@@ -345,27 +379,6 @@ void generate_correct()
 
 
 
-
-//////////////////////////////////////
-// print()
-// prints out all the strings
-//////////////////////////////////////
-void print()
-{
-  string current;
-  while(!corrects.empty() && !starts.empty())
-  {
-    current = corrects.back();
-    corrects.pop_back();
-    cout << current << endl;
-    current = starts.back();
-    starts.pop_back();
-    cout << current << endl << endl;
-  }
-}
-
-
-
 //////////////////////////////////////
 // already_made(string)
 // returns true if this string exists
@@ -389,71 +402,95 @@ bool already_made(string correct)
 
 //////////////////////////////////////
 // make sure each square has at
-// least 2 spots filled in
+// least the min spots
 // also no unreasonably full squares
 //////////////////////////////////////
-void check(int beg_row, int end_row, int beg_col, int end_col)
+void remove_spots_help(int beg_row, int end_row, int beg_col, int end_col, int num)
 {
-  int num_spots = 0;
-  for (int r = beg_row; r <= end_row; r++)
+  
+  int spots_valid[9] = {1, 1, 1, 1, 1, 1, 1, 1, 1};
+  int indices[9] = {(beg_row*9 + beg_col), 
+                    (beg_row*9 + beg_col+1), 
+                    (beg_row*9 + beg_col+2), 
+                    ((beg_row+1)*9 + beg_col), 
+                    ((beg_row+1)*9 + beg_col+1), 
+                    ((beg_row+1)*9 + beg_col+2), 
+                    ((beg_row+2)*9 + beg_col), 
+                    ((beg_row+2)*9 + beg_col+1), 
+                    ((beg_row+2)*9 + beg_col+2)};
+  int index = 0;
+  int num_removed = 0;
+  bool done = false;
+
+  while (!done)
   {
-    for (int c = beg_col; c <= end_col; c++)
+    if (num_removed == num)
     {
-      if (start_board_spots[r*9 + c].num != 0)
-      {
-        num_spots++;
-      }
+      done = true;
     }
-  }
-  
-  if (num_spots < 2)
-  {
-    start_board_spots[beg_row*9 + beg_col].num = correct_board_spots[beg_row*9 + beg_col].num;
-    start_board_spots[end_row*9 + end_col].num = correct_board_spots[end_row*9 + end_col].num;
-  }
-  
-  else if (num_spots >= 7)
-  {
-    start_board_spots[beg_row*9 + beg_col].num = 0;
-    start_board_spots[end_row*9 + end_col].num = 0;
-    start_board_spots[end_row*9 + beg_col].num = 0;
+
+    else
+    {
+      index = rand() % 9;
+      if (spots_valid[index] == 1)
+      {
+        spots_valid[index] = 0;
+        start_board_spots[indices[index]].num = 0;
+        num_removed++;
+      }
+    } 
   }
 }
 
 
-//////////////////////////////////////
-// remove_spots(spots)
-// removes numbers off of the board
-//////////////////////////////////////
-void remove_spots(int num_spots)
+
+void remove_spots(int min, int max)
 {
-  int num;
+  // make sure each square has at least the min
+  // and at most the max amount of numbers
+
+  // num = number between min and max inclusive
+  // 9 - num = number to remove
+
+  int num = 0;
+  int num_remove = 0;
+
   
-  // make a number of the spots null or 0
-  for (int i = 0; i < num_spots; i++)
-  {
-    num = rand() % start_board_spots.size();
-    if (start_board_spots[num].num != 0)
-    {
-      start_board_spots[num].num = 0;
-    }
-    else
-    {
-      i--;
-    }
-  }
-  
-  // make sure every square at least has two
-  // and less than 7
-  check(0,2,0,2);
-  check(0,2,3,5);
-  check(0,2,6,8);
-  check(3,5,0,2);
-  check(3,5,3,5);
-  check(3,5,6,8);
-  check(6,8,0,2);
-  check(6,8,3,5);
-  check(6,8,6,8);
+  num = rand()%((max-min)+1) + min;
+  num_remove = 9 - num;
+  remove_spots_help(0,2,0,2, num_remove);
+
+  num = rand()%((max-min)+1) + min;
+  num_remove = 9 - num;
+  remove_spots_help(0,2,3,5, num_remove);
+
+  num = rand()%((max-min)+1) + min;
+  num_remove = 9 - num;
+  remove_spots_help(0,2,6,8, num_remove);
+
+  num = rand()%((max-min)+1) + min;
+  num_remove = 9 - num;
+  remove_spots_help(3,5,0,2, num_remove);
+
+  num = rand()%((max-min)+1) + min;
+  num_remove = 9 - num;
+  remove_spots_help(3,5,3,5, num_remove);
+
+  num = rand()%((max-min)+1) + min;
+  num_remove = 9 - num;
+  remove_spots_help(3,5,6,8, num_remove);
+
+  num = rand()%((max-min)+1) + min;
+  num_remove = 9 - num;
+  remove_spots_help(6,8,0,2, num_remove);
+
+  num = rand()%((max-min)+1) + min;
+  num_remove = 9 - num;
+  remove_spots_help(6,8,3,5, num_remove);
+
+  num = rand()%((max-min)+1) + min;
+  num_remove = 9 - num;
+  remove_spots_help(6,8,6,8, num_remove);
 }
 
 
@@ -463,16 +500,40 @@ void remove_spots(int num_spots)
 //////////////////////////////////////
 // start(num)
 //////////////////////////////////////
-void start(int num)
+void start(int num, level difficulty) 
 {
   srand(time(0));
   SPOT current_spot;
   string correct_string;
   string start_string;
-  
+
+  int min = 0;
+  int max = 0;
+
+  switch(difficulty)
+  {
+    case(EASY):
+      min = min_easy;
+      max = max_easy;
+      break;
+    case(MEDIUM):
+      min = min_med;
+      max = max_med;
+      break;
+    case(HARD):
+      min = min_hard;
+      max = max_hard;
+      break;
+    default:
+      cout << "ERROR" << endl;
+      break;
+  }
+
   for (int j = 0; j < num; j++)
   {
+    // clear everything
     correct_board_spots.clear();
+    start_board_spots.clear();
       
     for (int i = 0; i < 81; i++)
     {
@@ -483,10 +544,15 @@ void start(int num)
       correct_board_spots.push_back(current_spot);
     }
 
+    // create correct board
+    // and string
     generate_correct();
     correct_string = make_string("correct");
+
+    // remove the spots from the start board
+    // keep correct board unchanged
     start_board_spots = correct_board_spots;
-    remove_spots(40);
+    remove_spots(min, max);
     start_string = make_string("start");
 
     if (already_made(correct_string))
@@ -510,8 +576,13 @@ void start(int num)
 //////////////////////////////////////
 int main(int argc, char *argv[])
 {
-  int num = atoi(argv[1]);
-  start(num);
+  int num           = atoi(argv[1]); // number of puzzles to make
+  int difficulty_in = atoi(argv[2]); // difficulty (1 = EASY, 2 = MEDIUM, 3 = HARD)
+
+  level difficulty = (difficulty_in == 3) ? HARD : 
+                     (difficulty_in == 2) ? MEDIUM : EASY;
+
+  start(num, difficulty);
   print();
   return 0;
 }

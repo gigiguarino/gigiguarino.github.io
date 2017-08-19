@@ -7,7 +7,7 @@ var NORMAL_FONT = "#3e3e3e";
 var DARK_FONT = "black";
 var DARK_BG = "#fdc680";
 var LIGHT_BG = "#ffd7a4";
-var NUM_BOARDS = 600;
+var NUM_BOARDS = 800; 
 
 
 
@@ -16,12 +16,22 @@ var current_board_spots = [];
 var correct_board_spots = [];
 var start_board_spots = [];
 var current_active_spot;
+var difficulty;
 
 
 $(document).ready(function(){
 	errors_shown = 0;
+	difficulty = "easy";
+
 	zeroize_board();
 	generate_board();
+
+	// difficulties
+	$("input[name=difficulty]").on("change", function() {
+		difficulty = $(this).val();
+		new_board();
+	});
+
 	// set active box
 	$(".box").on("click", set_active);
 	// hover over buttons
@@ -204,8 +214,8 @@ function generate_board() {
 	while (num <= 0 || num > NUM_BOARDS)
 	{
 		num = Math.floor(Math.random() * (NUM_BOARDS));
-		url1 = "boards/correct/" + num.toString() + ".txt";
-		url2 = "boards/start/" + num.toString() + ".txt";
+		url1 = "boards/" + difficulty + "/correct/" + num.toString() + ".txt";
+		url2 = "boards/" + difficulty + "/start/" + num.toString() + ".txt";
 	}
 
 	$.ajax({
