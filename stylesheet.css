@@ -61,15 +61,15 @@ body {
 .box {
 	display: inline-block;
 	background-color: #efefef;
-	width: 53.34px;
-	height: 53.34px;
+	width: 53.3px;
+	height: 53.3px;
 	border-style: solid;
 	border-width: 5px;
 	border-color: #3e3e3e;
 	font-size: 20px;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 53.3333333334px;
+	line-height: 53.3px;
 }
 
 .buttons {
