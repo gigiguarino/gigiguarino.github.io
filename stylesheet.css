@@ -6,14 +6,6 @@ body {
 	color: #3e3e3e;
 }
 
-.title {
-	display: block;
-	position: fixed;
-	top: -5px;
-	left: 10px;
-	z-index: -100px;
-}
-
 .mobile {
 	visibility: hidden;
 }
@@ -23,6 +15,13 @@ body {
 	z-index: 200;
 	left: 10px;
 	bottom: 5px;
+}
+
+#sb {
+	position: fixed;
+	z-index: 500;
+	left: 100px;
+	bottom: 100px;
 }
 
 

@@ -18,6 +18,11 @@ var start_board_spots = [];
 var current_active_spot;
 var difficulty;
 
+// speech bubble globals
+var speech_bubble_out;
+var current_speech_bubble_type;
+var other_speech_bubble_types = [ "hi", "smiley" ];
+var NUM_TYPES = 2;
 
 $(document).ready(function(){
 	errors_shown = 0;
@@ -31,6 +36,11 @@ $(document).ready(function(){
 		difficulty = $(this).val();
 		new_board();
 	});
+
+	// logo speech bubble init
+	current_speech_bubble_type = "title";
+	speech_bubble_out = true;
+	$(".logo").on("click", speech_bubble);
 
 	// set active box
 	$(".box").on("click", set_active);
@@ -491,6 +501,40 @@ function popup(text) {
 	$(".popup").css("visibility", "visible");
 }
 
+
+function speech_bubble() {
+	var index = 0;
+	var filename = "images/speech_bubbles/";
+	if (speech_bubble_out)
+	{
+		$("#sb").css("visibility", "hidden");
+		speech_bubble_out = false;
+	}
+	else
+	{
+		// if last speech bubble type was title, do different random one
+		// if last speech bubble type wasn't title, do title
+		if (current_speech_bubble_type == "title")
+		{
+			index = Math.floor(Math.random() * (NUM_TYPES));
+			current_speech_bubble_type = other_speech_bubble_types[index];
+			filename += current_speech_bubble_type + ".png";
+			$("#sb").attr("src", filename);
+			$("#sb").css("visibility", "visible");
+			speech_bubble_out = true;
+		}
+		else
+		{
+			current_speech_bubble_type = "title";
+			filename += current_speech_bubble_type + ".png";
+			$("#sb").attr("src", filename);
+			$("#sb").css("visibility", "visible");
+			speech_bubble_out = true;
+		}
+	}
+}
+
+
 // numbers
 $(document).keyup(function(e){
 	// 48 = 0
@@ -510,6 +554,7 @@ $(document).keyup(function(e){
 		}
 	}
 });
+
 
 
 
