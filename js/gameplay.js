@@ -21,8 +21,8 @@ var difficulty;
 // speech bubble globals
 var speech_bubble_out;
 var current_speech_bubble_type;
-var other_speech_bubble_types = [ "hi", "smiley" ];
-var NUM_TYPES = 2;
+var other_speech_bubble_types = [ "hi", "smiley", "trump" ];
+var NUM_TYPES = 3;
 
 $(document).ready(function(){
 	errors_shown = 0;
@@ -123,7 +123,6 @@ function zeroize_board() {
 		correct_board_spots.push("0");
 	}
 }
-
 
 /////////////////////////////////////////////
 // in_row() in_col() in_square()
