@@ -27,12 +27,12 @@ body {
 
 .game {
 	display: block;
-	width: 880px;
+	width: 900px;
 	height: 620px;
 	top: 50%;
 	left: 50%;
 	margin-top: -310px;
-	margin-left: -440px;
+	margin-left: -450px;
 	position: fixed;
 }
 
@@ -75,7 +75,7 @@ body {
 .difficulty {
 	display: inline-block;
 	float: left;
-	width: 80px;
+	width: 100px;
 	height: 60px;
 }
 
