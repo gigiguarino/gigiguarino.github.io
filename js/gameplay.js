@@ -7,9 +7,7 @@ var NORMAL_FONT = "#3e3e3e";
 var DARK_FONT = "black";
 var DARK_BG = "#fdc680";
 var LIGHT_BG = "#ffd7a4";
-var NUM_BOARDS = 800; 
-
-
+var NUM_BOARDS = 800;
 
 // global arrays of spots
 var current_board_spots = [];
@@ -21,8 +19,8 @@ var difficulty;
 // speech bubble globals
 var speech_bubble_out;
 var current_speech_bubble_type;
-var other_speech_bubble_types = [ "hi", "smiley", "trump" ];
-var NUM_TYPES = 3;
+var other_speech_bubble_types = [ "hi", "smiley" ];
+var NUM_TYPES = 2;
 
 $(document).ready(function(){
 	errors_shown = 0;
