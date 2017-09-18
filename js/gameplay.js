@@ -513,10 +513,10 @@ function speech_bubble() {
 		// if last speech bubble type wasn't title, do title
 		if (current_speech_bubble_type == "title")
 		{
+			$("#sb").attr("src", filename);
 			index = Math.floor(Math.random() * (NUM_TYPES));
 			current_speech_bubble_type = other_speech_bubble_types[index];
 			filename += current_speech_bubble_type + ".png";
-			$("#sb").attr("src", filename);
 			$("#sb").css("visibility", "visible");
 			speech_bubble_out = true;
 		}
