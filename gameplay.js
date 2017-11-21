@@ -1,10 +1,20 @@
 
 var current_flower = 0;
 
-$('body').click(function(){
-	alert("click");
-	switch_img();
+$("document").ready(function(){
+	if (typeof window.orientation !== 'undefined')
+	{
+		$(".flower").attr("src", "images/flower0.png");
+	}
+	else
+	{
+		$(".flower").attr("src", "images/flower00.png");
+	}
+	current_flower = 0;
+	$("body").on("click", switch_img);
 });
+
+
 
 function switch_img()
 {
@@ -24,7 +34,6 @@ function switch_img()
 		current_flower = next_num;
 	}
 
-	alert(new_image);
-	$('.flower').attr('src', new_image);
+	$(".flower").attr("src", new_image);
 }
 
