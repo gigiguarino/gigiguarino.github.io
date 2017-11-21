@@ -2,6 +2,7 @@
 var current_flower = 0;
 
 $("document").ready(function(){
+	window.scrollTo(0, document.body.scrollHeight);
 	if (typeof window.orientation !== 'undefined')
 	{
 		$(".flower").attr("src", "images/flower0.png");
