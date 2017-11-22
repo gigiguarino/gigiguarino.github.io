@@ -12,18 +12,27 @@ var color = 0;
 // sky types
 var sky = 0;
 
+var start = false;
+
 $("document").ready(function(){
 	
 	// info from query string passed in 
 	color = getUrlVars()["color"];
 	sky = getUrlVars()["sky"];
+	start = true;
 
 	// new button press
 	$("#x").on("click", function(){
 		current_flower = 0;
 		enable_screen1();
 	});
-	$("body").on("click", switch_img);
+	$("body").on("click", function(){
+		if (start){
+			start = false;
+			var flower_source = "../images/flower/color" + String(color) + "/animation.gif";
+			$("#flower").attr("src", flower_source);
+		}
+	});
 
 	enable_screen3();
 });
@@ -76,6 +85,7 @@ function enable_screen3()
 	window.scrollTo(0, document.body.scrollHeight);
 }
 
+/*
 
 function switch_img()
 {
@@ -97,4 +107,4 @@ function switch_img()
 
 	$("#flower").attr("src", new_image);
 }
-
+*/
