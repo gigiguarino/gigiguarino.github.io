@@ -1,0 +1,136 @@
+
+
+#screen1 {
+	background-color: ;
+}
+
+#screen2 {
+	background-color: ;
+}
+
+#pick-color {
+	display: block;
+	position: fixed;
+	width: 400px;
+	left: 50%;
+	margin-left: -200px;
+	top: 100px;
+}
+
+#pick-sky {
+	display: block;
+	position: fixed;
+	width: 367px;
+	left: 50%;
+	margin-left: -184px;
+	top: 100px;
+}
+
+
+#color-holder {
+	display: block;
+	position: fixed;
+	width: 400px;
+	height: 400px;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+
+#sky-holder {
+	display: block;
+	position: fixed;
+	width: 400px;
+	height: 400px;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+
+.button {
+	display: inline-block;
+	border-width: 10px;
+	border-color: black;
+	border-style: solid;
+	margin: 2%;
+	width: 40%;
+	height: 40%;
+}
+
+.button-img {
+	display: inline-block;
+	border-width: 10px;
+	border-color: black;
+	border-style: solid;
+	margin: 2%;
+	width: 40%;
+	height: 40%;
+}
+
+#color0 {
+	background-color: #FFA941;
+}
+
+#color1 {
+	background-color: #FF80A9;
+}
+
+#color2 {
+	background-color: #AB82FF;
+}
+
+#color3 {
+	background-color: #3DAAD6;
+}
+
+#x {
+	display: block;
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	top: 10px;
+	left: 10px;
+	z-index: 200;
+}
+
+#flower {
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+	z-index: 100;
+	position: fixed;
+}
+
+.background0 {
+	z-index: 50;
+	background: -webkit-linear-gradient(to bottom, #66FFFF 0%,  #FFCC99 100%);
+	background: -o-linear-gradient(to bottom, #66FFFF 0%, #FFCC99 100%);
+	background: -moz-linear-gradient(to bottom, #66FFFF 0%, #FFCC99 100%);
+	background: linear-gradient(to bottom, #66FFFF 0%, #FFCC99 100%);
+}
+
+.background1 {
+	z-index: 50;
+	background: -webkit-linear-gradient(to bottom, #FFCC99 0%, #FFCCFF 100%);
+	background: -o-linear-gradient(to bottom, #FFCC99 0%, #FFCCFF 100%);
+	background: -moz-linear-gradient(to bottom, #FFCC99 0%, #FFCCFF 100%);
+	background: linear-gradient(to bottom, #FFCC99 0%, #FFCCFF 100%);
+}
+
+.background2 {
+	z-index: 50;
+	background: -webkit-linear-gradient(to bottom, #9999FF 0%, #CCFFFF 100%);
+	background: -o-linear-gradient(to bottom, #9999FF 0%, #CCFFFF 100%);
+	background: -moz-linear-gradient(to bottom, #9999FF 0%, #CCFFFF 100%);
+	background: linear-gradient(to bottom, #9999FF 0%, #CCFFFF 100%);
+}
+
+.background3 {
+	z-index: 50;
+	background: -webkit-linear-gradient(to bottom, #003366 0%, #CC0066 100%);
+	background: -o-linear-gradient(to bottom, #003366 0%, #CC0066 100%);
+	background: -moz-linear-gradient(to bottom, #003366 0%, #CC0066 100%);
+	background: linear-gradient(to bottom, #003366 0%, #CC0066 100%);
+}

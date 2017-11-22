@@ -1,0 +1,148 @@
+
+
+body {
+	background-color: #fde9cf;
+	font-family: monospace;
+	color: #3e3e3e;
+}
+
+.mobile {
+	visibility: hidden;
+}
+
+.logo {
+	position: fixed;
+	z-index: 200;
+	left: 10px;
+	bottom: 5px;
+}
+
+#sb {
+	position: fixed;
+	z-index: 500;
+	left: 100px;
+	bottom: 100px;
+}
+
+
+.game {
+	display: block;
+	width: 900px;
+	height: 620px;
+	top: 50%;
+	left: 50%;
+	margin-top: -310px;
+	margin-left: -450px;
+	position: fixed;
+}
+
+.board {
+	display: inline-block;
+	border-style: double;
+	border-width: 10px;
+	border-color: #3e3e3e;
+	font-size: 0px;
+	text-align: center;
+	width: 600px;
+	height: 600px;
+}
+
+.square {
+	display: inline-block;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #3e3e3e;
+	width: 190px;
+	height: 190px;
+	font-size: 0px;
+	background-color: #3e3e3e;
+}
+
+.box {
+	display: inline-block;
+	background-color: #efefef;
+	width: 53.3px;
+	height: 53.3px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #3e3e3e;
+	font-size: 20px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 53.3px;
+}
+
+.difficulty {
+	display: inline-block;
+	float: left;
+	width: 100px;
+	height: 60px;
+}
+
+.buttons {
+	display: inline-block;
+	float: right;
+	width: 160px;
+	height: 600px;
+}
+
+.button {
+	display: block;
+	background-color: #ffd7a4;
+	border-color: #3e3e3e;
+	
+	border-style: solid;
+	border-width: 5px;
+	width: 150px;
+	height: 40px;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+}
+
+.popup {
+	visibility: hidden;
+	display: block;
+	position: fixed;
+	background-color: white;
+	border-color: #3e3e3e;
+	border-style: solid;
+	border-width: 5px;
+	width: 220px;
+	height: 160px;
+	left: 50%;
+	top: 50%;
+	margin-left: -115px;
+	margin-top: -85px;
+	z-index: 500;
+}
+
+#pu-div {
+	display: block;
+	position: relative;
+	width: 200px;
+	height: 70px;
+	left: 50%;
+	top: 5px;
+	margin-left: -100px;
+}
+
+#pu-p {
+	display: block;
+	position: relative;
+	width: 200px;
+	text-align: center;
+	top: 25%;
+	font-size: 15px;
+}
+
+.button.ok {
+	width: 70px;
+	position: relative;
+	top: 5px;
+	left: 50%;
+	margin-left: -40px;
+}
+
+

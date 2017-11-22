@@ -1,4 +1,5 @@
 # gigiguarino.github.io
 # A personal website for myself
 
-currently a flower animation lol
+on desktop browsers - sudoku game
+on mobile iphone/ipad/android - flower animation
