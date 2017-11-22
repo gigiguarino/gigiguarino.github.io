@@ -23,7 +23,7 @@ $("document").ready(function(){
 		current_flower = 0;
 		enable_screen1();
 	});
-	$("#flower").on("click", switch_img);
+	$("body").on("click", switch_img);
 
 	enable_screen3();
 });
