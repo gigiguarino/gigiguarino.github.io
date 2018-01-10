@@ -17,11 +17,11 @@ enum level { EASY, MEDIUM, HARD };
 // medium has 50-55 squares removed
 // hard has 55-60 squares removed
 
-int min_easy = 45;
-int max_easy = 50;
-int min_med = 50;
-int max_med = 55;
-int min_hard = 55;
+int min_easy = 40;
+int max_easy = 45;
+int min_med = 46;
+int max_med = 53;
+int min_hard = 54;
 int max_hard = 60;
 
 //////////////////////////////////////
