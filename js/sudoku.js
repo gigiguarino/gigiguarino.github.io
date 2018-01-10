@@ -348,7 +348,6 @@ function check_col(num) {
 	return valid;
 }
 
-
 /////////////////////////////////////////////
 // check_for_win()
 // calls all the checking functions
@@ -383,34 +382,21 @@ function check_for_win(){
 /////////////////////////////////////////////
 
 function set_active() {
-	if ($(this).css("color") == DARK_FONT)
-	{
-		$(this).css("color", NORMAL_FONT);
-		$(this).css("font-weight", normal);
-		current_active_spot = 0;
-		if ($(this).text() == ".")
+	$(".box").each(function(){
+    $(this).css("color", NORMAL_FONT);
+		$(this).css("font-weight", "normal");
+	  if ($(this).text() == ".")
 		{
-			$(this).text(" ");	
+			$(this).text(" ");
 		}
-	}
-	else
+	});
+	$(this).css("color", DARK_FONT);
+	$(this).css("font-weight", "bold");
+	if ($(this).text() == " ")
 	{
-		$(".box").each(function(){
-			$(this).css("color", NORMAL_FONT);
-			$(this).css("font-weight", "normal");
-			if ($(this).text() == ".")
-			{
-				$(this).text(" ");
-			}
-		});
-		$(this).css("color", DARK_FONT);
-		$(this).css("font-weight", "bold");
-		if ($(this).text() == " ")
-		{
-			$(this).text(".");
-		}
-		current_active_spot = this;
+		$(this).text(".");
 	}
+	current_active_spot = this;
 }
 
 // button background change back to light
