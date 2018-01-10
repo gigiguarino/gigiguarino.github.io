@@ -1,7 +1,7 @@
 
 
 all: generate_boards.cpp
-	g++ -Wall -Werror generate_boards.cpp -o sudoku_generation
+	g++ -std=c++11 -Wall -Werror generate_boards.cpp -o sudoku_generation
 
 
 clean:

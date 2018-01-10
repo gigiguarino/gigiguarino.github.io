@@ -13,17 +13,16 @@ using namespace std;
 
 enum level { EASY, MEDIUM, HARD };
 
-// each square in easy has either 4 or 5 or 6
-// each square in medium has either 3 or 4
-// each square in hard has either 2 or 3
+// easy has 45-50 squares removed
+// medium has 50-55 squares removed
+// hard has 55-60 squares removed
 
-int min_easy = 4;
-int max_easy = 6;
-int min_med = 3;
-int max_med = 4;
-int min_hard = 2;
-int max_hard = 3;
-
+int min_easy = 45;
+int max_easy = 50;
+int min_med = 50;
+int max_med = 55;
+int min_hard = 55;
+int max_hard = 60;
 
 //////////////////////////////////////
 // SPOT struct
@@ -398,103 +397,37 @@ bool already_made(string correct)
 }
 
 
-
-
-//////////////////////////////////////
-// make sure each square has at
-// least the min spots
-// also no unreasonably full squares
-//////////////////////////////////////
-void remove_spots_help(int beg_row, int end_row, int beg_col, int end_col, int num)
+void remove_spots(int num)
 {
-  
-  int spots_valid[9] = {1, 1, 1, 1, 1, 1, 1, 1, 1};
-  int indices[9] = {(beg_row*9 + beg_col), 
-                    (beg_row*9 + beg_col+1), 
-                    (beg_row*9 + beg_col+2), 
-                    ((beg_row+1)*9 + beg_col), 
-                    ((beg_row+1)*9 + beg_col+1), 
-                    ((beg_row+1)*9 + beg_col+2), 
-                    ((beg_row+2)*9 + beg_col), 
-                    ((beg_row+2)*9 + beg_col+1), 
-                    ((beg_row+2)*9 + beg_col+2)};
-  int index = 0;
-  int num_removed = 0;
-  bool done = false;
+  random_device rd;
+  mt19937 g(rd());
 
-  while (!done)
+  int num_to_keep = 81 - num;
+
+  vector<int> board_numbers = { 0, 1, 2, 3, 4, 5, 6, 7, 8,
+    9, 10, 11, 12, 13, 14, 15, 16, 17,
+    18, 19, 20, 21, 22, 23, 24, 25, 26,
+    27, 28, 29, 30, 31, 32, 33, 34, 35,
+    36, 37, 38, 39, 40, 41, 42, 43, 44,
+    45, 46, 47, 48, 49, 50, 51, 52, 53,
+    54, 55, 56, 57, 58, 59, 60, 61, 62,
+    63, 64, 65, 66, 67, 68, 69, 70, 71,
+    72, 73, 74, 75, 76, 77, 78, 79, 80 };
+
+  shuffle(board_numbers.begin(), board_numbers.end(), g);
+ 
+  // remove # of spots specified 
+  board_numbers.erase(board_numbers.begin(), board_numbers.begin()+num_to_keep);
+ 
+  // make those indexes on the start board = 0
+  int index;
+  while (!board_numbers.empty())
   {
-    if (num_removed == num)
-    {
-      done = true;
-    }
-
-    else
-    {
-      index = rand() % 9;
-      if (spots_valid[index] == 1)
-      {
-        spots_valid[index] = 0;
-        start_board_spots[indices[index]].num = 0;
-        num_removed++;
-      }
-    } 
+    index = board_numbers.back();
+    start_board_spots[index].num = 0; 
+    board_numbers.pop_back();
   }
 }
-
-
-
-void remove_spots(int min, int max)
-{
-  // make sure each square has at least the min
-  // and at most the max amount of numbers
-
-  // num = number between min and max inclusive
-  // 9 - num = number to remove
-
-  int num = 0;
-  int num_remove = 0;
-
-  
-  num = rand()%((max-min)+1) + min;
-  num_remove = 9 - num;
-  remove_spots_help(0,2,0,2, num_remove);
-
-  num = rand()%((max-min)+1) + min;
-  num_remove = 9 - num;
-  remove_spots_help(0,2,3,5, num_remove);
-
-  num = rand()%((max-min)+1) + min;
-  num_remove = 9 - num;
-  remove_spots_help(0,2,6,8, num_remove);
-
-  num = rand()%((max-min)+1) + min;
-  num_remove = 9 - num;
-  remove_spots_help(3,5,0,2, num_remove);
-
-  num = rand()%((max-min)+1) + min;
-  num_remove = 9 - num;
-  remove_spots_help(3,5,3,5, num_remove);
-
-  num = rand()%((max-min)+1) + min;
-  num_remove = 9 - num;
-  remove_spots_help(3,5,6,8, num_remove);
-
-  num = rand()%((max-min)+1) + min;
-  num_remove = 9 - num;
-  remove_spots_help(6,8,0,2, num_remove);
-
-  num = rand()%((max-min)+1) + min;
-  num_remove = 9 - num;
-  remove_spots_help(6,8,3,5, num_remove);
-
-  num = rand()%((max-min)+1) + min;
-  num_remove = 9 - num;
-  remove_spots_help(6,8,6,8, num_remove);
-}
-
-
-
 
 
 //////////////////////////////////////
@@ -507,8 +440,10 @@ void start(int num, level difficulty)
   string correct_string;
   string start_string;
 
+  int num_to_remove = 0;
   int min = 0;
   int max = 0;
+
 
   switch(difficulty)
   {
@@ -544,6 +479,9 @@ void start(int num, level difficulty)
       correct_board_spots.push_back(current_spot);
     }
 
+    // calculate num to remove
+    num_to_remove = (rand() % (max - min + 1)) + min;
+    
     // create correct board
     // and string
     generate_correct();
@@ -552,7 +490,7 @@ void start(int num, level difficulty)
     // remove the spots from the start board
     // keep correct board unchanged
     start_board_spots = correct_board_spots;
-    remove_spots(min, max);
+    remove_spots(num_to_remove);
     start_string = make_string("start");
 
     if (already_made(correct_string))
