@@ -38,10 +38,11 @@ body {
 
 .board {
 	display: inline-block;
+	background-color: #3e3e3e;
 	border-style: double;
-	border-width: 10px;
-	border-color: #3e3e3e;
-	font-size: 0px;
+  border-width: 10px;
+  border-color: #3e3e3e;
+  font-size: 0px;
 	text-align: center;
 	width: 600px;
 	height: 600px;
