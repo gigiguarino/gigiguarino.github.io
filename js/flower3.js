@@ -90,18 +90,6 @@ function enable_screen3()
 	{
 		$("body").addClass("background5");
 	}
-	else if (sky == 6)
-	{
-		$("body").addClass("background6");
-	}
-	else if (sky == 7)
-	{
-		$("body").addClass("background7");
-	}
-	else if (sky == 8)
-	{
-		$("body").addClass("background8");
-	}
 	else
 	{
 		// error
