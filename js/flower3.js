@@ -3,10 +3,15 @@
 var current_flower = 0;
 
 // color types:
-// 0 - orange
-// 1 - pink
-// 2 - purple
-// 3 - blue
+// 0 - red
+// 1 - orange
+// 2 - yellow
+// 3 - pink
+// 4 - white
+// 5 - green
+// 6 - purple
+// 7 - blue
+// 8 - black
 var color = 0;
 
 // sky types
@@ -76,6 +81,26 @@ function enable_screen3()
 	else if (sky == 3)
 	{
 		$("body").addClass("background3");
+	}
+	else if (sky == 4)
+	{
+		$("body").addClass("background4");
+	}
+	else if (sky == 5)
+	{
+		$("body").addClass("background5");
+	}
+	else if (sky == 6)
+	{
+		$("body").addClass("background6");
+	}
+	else if (sky == 7)
+	{
+		$("body").addClass("background7");
+	}
+	else if (sky == 8)
+	{
+		$("body").addClass("background8");
 	}
 	else
 	{

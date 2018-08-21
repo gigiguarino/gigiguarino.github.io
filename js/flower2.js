@@ -1,10 +1,15 @@
 
 
 // color types:
-// 0 - orange
-// 1 - pink
-// 2 - purple
-// 3 - blue
+// 0 - red
+// 1 - orange
+// 2 - yellow
+// 3 - pink
+// 4 - white
+// 5 - green
+// 6 - purple
+// 7 - blue
+// 8 - black
 var color = 0;
 
 
@@ -30,6 +35,26 @@ $("document").ready(function(){
 	$("#sky3").on("click", function(){
 		console.log("click sky 3");
 		enable_screen3(3);
+	});
+	$("#sky4").on("click", function(){
+		console.log("click sky 4");
+		enable_screen3(4);
+	});
+	$("#sky5").on("click", function(){
+		console.log("click sky 5");
+		enable_screen3(5);
+	});
+	$("#sky6").on("click", function(){
+		console.log("click sky 6");
+		enable_screen3(6);
+	});
+	$("#sky7").on("click", function(){
+		console.log("click sky 7");
+		enable_screen3(7);
+	});
+	$("#sky8").on("click", function(){
+		console.log("click sky 8");
+		enable_screen3(8);
 	});
 });
 
