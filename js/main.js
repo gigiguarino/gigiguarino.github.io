@@ -1,6 +1,6 @@
 
 $("document").ready(function(){
-	if (true /*typeof window.orientation !== 'undefined'*/)
+	if (typeof window.orientation !== 'undefined')
 	{
 		// iphone/ipad/android
 		// open flower animation
