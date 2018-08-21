@@ -44,18 +44,6 @@ $("document").ready(function(){
 		console.log("click sky 5");
 		enable_screen3(5);
 	});
-	$("#sky6").on("click", function(){
-		console.log("click sky 6");
-		enable_screen3(6);
-	});
-	$("#sky7").on("click", function(){
-		console.log("click sky 7");
-		enable_screen3(7);
-	});
-	$("#sky8").on("click", function(){
-		console.log("click sky 8");
-		enable_screen3(8);
-	});
 });
 
 function getUrlVars()
